@@ -68,7 +68,7 @@ async def gather():
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
     text = "\n".join("{}\nPing:{}\n".format(server, str(ping)) for server, ping in sort.items())
-    send(text)
+    await send(text)
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
     
