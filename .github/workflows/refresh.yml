@@ -19,3 +19,13 @@ jobs:
           sudo apt-get -y install python3-pip shadowsocks-libev
           pip install aiohttp aiohttp_socks
           python main.py ${{ secrets.token }}
+      - name: upload result
+        uses: actions/upload-artifact@v2
+        with:
+          name: SUBSCRIBE
+          path: ${{ github.workspace }}
+      - name: upload result
+        uses: actions/upload-artifact@v2
+        with:
+          name: ss.txt
+          path: ${{ github.workspace }}
