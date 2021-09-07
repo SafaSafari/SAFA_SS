@@ -60,13 +60,13 @@ async def gather():
     global result
     with open('source_ss.txt') as f:
         source = f.read()
-    list = source.split("\n")
+    source = source.split("\n")
     n = 30
-    chunk = [list[i:i + n] for i in range(0, len(list), n)]
+    chunk = [source[i:i + n] for i in range(0, len(source), n)]
     for proxies in chunk:
         await asyncio.gather(*[main(n+3333, proxies[n]) for n in range(0, len(proxies) - 1)])
         await run('killall ss-local')
-        print(str(list.index(proxies[0])) + '/' + str(len(list)), end="\r")
+        print(str(source.index(proxies[0])) + '/' + str(len(source)), end="\r")
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
