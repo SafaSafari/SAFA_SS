@@ -30,7 +30,7 @@ async def get(proxy, send = False):
 async def send(send):
     if not sys.argv[1]: return
     async with ClientSession() as session:
-        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "SafaProxy", "text": send, "parse_mode": "markdown"}): pass # :)
+        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown"}): pass # :)
 async def ping(ip, port, enc, password, n):
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, n, password, enc))
     p = await get("127.0.0.1:{}".format(n))
