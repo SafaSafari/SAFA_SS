@@ -70,12 +70,12 @@ async def gather():
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
-    text.__add__("\n".join("`{}`\nPing:{}\n".format(server, str(ping)) for server, ping in sort.items()))
+    text = text.__add__("\n".join("`{}`\nPing:{}\n".format(server, str(ping)) for server, ping in sort.items()))
     await send(text)
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
     with open("SUBSCRIBE", "w+") as f:
-        f.write(base64.b64encode(b"\n".join(server.encode('utf-8') for server, ping in list(sort.items())[:10])))
+        f.write(base64.b64encode(b"\n".join(server.encode('utf-8') for server, ping in list(sort.items())[:10])).decode('utf-8'))
     
 loop = asyncio.get_event_loop()
 loop.run_until_complete(gather())
