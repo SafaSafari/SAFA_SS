@@ -6,7 +6,7 @@ on: workflow_dispatch
 
 jobs:
   build:
-    runs-on: server
+    runs-on: [self-hosted, server]
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content to github runner.
