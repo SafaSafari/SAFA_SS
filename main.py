@@ -35,7 +35,7 @@ async def send(send):
     if not sys.argv[1]:
         return
     async with ClientSession() as session:
-        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": False}):
+        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}):
             pass  # :)
 
 
