@@ -40,7 +40,9 @@ async def main(n, ss):
     global result
     if ss[0:5] != "ss://":
         return
-    part1 = ss[5:].split("#")[0]
+    part1 = ss[5:].split("#")
+    part2 = part1[1]
+    part1 = part1[0]
     if not part1.__contains__("@"):
         part2 = base64.b64decode(part1).decode('utf-8')
     else:
@@ -52,7 +54,7 @@ async def main(n, ss):
     p = await ping(ip, port, enc, password, n)
     if p != None:
         p = (p * 100).__round__()
-        result['ss://' + part1 + "#@SafaProxy"] = p
+        result["ss://{}#{}@SafaProxy".format(part1, part2)] = p
     
 async def gather():
     global result
