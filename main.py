@@ -67,7 +67,7 @@ async def gather():
         print(str(list.index(proxies[0])) + '/' + str(len(list)), end="\r")
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
-    text = "\n".join([server, ping] for server, ping in sort.items())
+    text = "\n".join([server, str(ping)] for server, ping in sort.items())
     send(text)
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
