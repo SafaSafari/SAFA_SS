@@ -8,13 +8,15 @@ from aiohttp_socks import ProxyConnector
 
 result = {}
 
+
 async def run(cmd):
     proc = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE)
 
-async def get(proxy, send = False):
+
+async def get(proxy, send=False):
     proxy = 'socks5://{}'.format(proxy)
     connector = ProxyConnector.from_url(proxy)
     try:
@@ -28,21 +30,34 @@ async def get(proxy, send = False):
     except:
         return None
 
+
 async def send(send):
-    if not sys.argv[1]: return
+    if not sys.argv[1]:
+        return
     async with ClientSession() as session:
-        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": False}): pass # :)
+        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": False}):
+            pass  # :)
+
+
 async def ping(ip, port, enc, password, n):
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, n, password, enc))
     p = await get("127.0.0.1:{}".format(n))
     return p
-async def github(api, method, data = {}):
-    if not sys.argv[2]: return
+
+
+async def github(api, method, data={}):
+    if not sys.argv[2]:
+        return
     async with ClientSession() as session:
-        async with session.request(method, "https://api.github.com/{}".format(api), data=data if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=sys.argv[2]): pass
+        async with session.request(method, "https://api.github.com/{}".format(api), data=data if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=('SafaSafari', sys.argv[2])):
+            pass
+
+
 async def upload_github(file):
     with open(file, 'w+') as f:
         await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET'))['sha']})
+
+
 async def main(n, ss):
     global result
     if ss[0:5] != "ss://":
@@ -62,7 +77,8 @@ async def main(n, ss):
     if p != None:
         p = (p * 100).__round__()
         result["ss://{}#{}@SafaProxy".format(part1, part2)] = p
-    
+
+
 async def gather():
     global result
     with open('source_ss.txt') as f:
@@ -77,14 +93,16 @@ async def gather():
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
-    text = text.__add__("\n".join("`{}`\nPing:{}\n".format(server, str(ping)) for server, ping in sort.items()))
+    text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
+        server, str(ping)) for server, ping in sort.items()))
     await send(text)
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
     with open("SUBSCRIBE", "w+") as f:
-        f.write(base64.b64encode(b"\n".join(server.encode('utf-8') for server, ping in list(sort.items())[:10])).decode('utf-8'))
+        f.write(base64.b64encode(b"\n".join(server.encode('utf-8')
+                for server, ping in list(sort.items())[:10])).decode('utf-8'))
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
-    
+
 loop = asyncio.get_event_loop()
 loop.run_until_complete(gather())
