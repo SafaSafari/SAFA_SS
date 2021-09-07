@@ -4,6 +4,7 @@ import time
 import sys
 import json
 from aiohttp import ClientSession
+from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
 
 result = {}
@@ -49,7 +50,7 @@ async def github(api, method, data={}):
     if not sys.argv[2]:
         return
     async with ClientSession() as session:
-        async with session.request(method, "https://api.github.com/{}".format(api), data=data if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=('SafaSafari', sys.argv[2])):
+        async with session.request(method, "https://api.github.com/{}".format(api), data=data if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[2])):
             pass
 
 
