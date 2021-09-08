@@ -47,6 +47,7 @@ async def ping(ip, port, enc, password, n):
 
 
 async def github(api, method, data={}):
+    print(data)
     if not sys.argv[2]:
         return
     async with ClientSession() as session:
