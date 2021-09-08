@@ -95,7 +95,7 @@ async def gather():
         result.items(), key=lambda item: item[1])}
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
-        server, str(ping)) for server, ping in sort.items()))
+        server, str(ping)) for server, ping in list(sort.items())[:10]))
     await send(text)
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
