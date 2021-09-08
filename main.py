@@ -47,7 +47,6 @@ async def ping(ip, port, enc, password, n):
 
 
 async def github(api, method, data={}):
-    print(data)
     if not sys.argv[2]:
         return
     async with ClientSession() as session:
@@ -57,7 +56,7 @@ async def github(api, method, data={}):
 
 async def upload_github(file):
     with open(file, 'r') as f:
-        print(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')).decode('utf-8'), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET'))['sha']}))
+        await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')).decode('utf-8'), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'GET'))['sha']})
 
 
 async def main(n, ss):
