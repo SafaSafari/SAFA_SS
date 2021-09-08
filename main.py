@@ -56,7 +56,7 @@ async def github(api, method, data={}):
 
 async def upload_github(file):
     with open(file, 'w+') as f:
-        await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET'))['sha']})
+        await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')), 'sha': json.loads((await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET')))['sha']})
 
 
 async def main(n, ss):
@@ -64,7 +64,7 @@ async def main(n, ss):
     if ss[0:5] != "ss://":
         return
     part1 = ss[5:].split("#")
-    part2 = part1[1]
+    country = part1[1]
     part1 = part1[0]
     if not part1.__contains__("@"):
         part2 = base64.b64decode(part1).decode('utf-8')
@@ -77,7 +77,7 @@ async def main(n, ss):
     p = await ping(ip, port, enc, password, n)
     if p != None:
         p = (p * 100).__round__()
-        result["ss://{}#{}@SafaProxy".format(part1, part2)] = p
+        result["ss://{}#{}@SafaProxy".format(part1, country)] = p
 
 
 async def gather():
