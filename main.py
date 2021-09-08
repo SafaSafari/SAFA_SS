@@ -50,13 +50,13 @@ async def github(api, method, data={}):
     if not sys.argv[2]:
         return
     async with ClientSession() as session:
-        async with session.request(method, "https://api.github.com/{}".format(api), data=data if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[2])) as res:
+        async with session.request(method, "https://api.github.com/{}".format(api), data=json.dumps(data) if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[2])) as res:
             return (await res.read()).decode('utf-8')
 
 
 async def upload_github(file):
     with open(file, 'w+') as f:
-        print(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET'))['sha']}))
+        await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/SUBSCRIBE', 'GET'))['sha']})
 
 
 async def main(n, ss):
