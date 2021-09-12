@@ -33,10 +33,10 @@ async def get(proxy, send=False):
 
 
 async def send(send):
-    if not sys.argv[1]:
+    if not sys.argv[2]:
         return
     async with ClientSession() as session:
-        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[1]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}):
+        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}):
             pass  # :)
 
 
@@ -47,10 +47,10 @@ async def ping(ip, port, enc, password, n):
 
 
 async def github(api, method, data={}):
-    if not sys.argv[2]:
+    if not sys.argv[1]:
         return
     async with ClientSession() as session:
-        async with session.request(method, "https://api.github.com/{}".format(api), data=json.dumps(data) if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[2])) as res:
+        async with session.request(method, "https://api.github.com/{}".format(api), data=json.dumps(data) if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[1])) as res:
             return (await res.read()).decode('utf-8')
 
 
