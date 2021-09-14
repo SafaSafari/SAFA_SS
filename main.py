@@ -32,10 +32,12 @@ async def get(proxy, send=False):
         return None
 
 
-async def send(send):
+async def send(send, proxy):
     if not sys.argv[2]:
         return
-    async with ClientSession() as session:
+    proxy = 'socks5://{}'.format(proxy)
+    connector = ProxyConnector.from_url(proxy)
+    async with ClientSession(connector=connector) as session:
         async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}):
             pass  # :)
 
@@ -96,7 +98,8 @@ async def gather():
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
-    await send(text)
+    await main(9999, sort[0])
+    await send(text, '127.0.0.1:9999')
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
     with open("SUBSCRIBE", "w+") as f:
