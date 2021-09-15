@@ -17,4 +17,4 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           pip3 install aiohttp aiohttp_socks
-          python3 main.py ${{ secrets.git_token }} ${{ secrets.token }}
+          python3.9 main.py ${{ secrets.git_token }} ${{ secrets.token }}
