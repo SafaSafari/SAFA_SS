@@ -98,7 +98,7 @@ async def gather():
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
-    await asyncio.create_task(main(9999, list(sort.items())[0][0]))
+    await asyncio.gather(main(9999, list(sort.items())[0][0]))
     await send(text, '127.0.0.1:9999')
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
