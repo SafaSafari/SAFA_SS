@@ -81,7 +81,7 @@ async def main(n, ss):
     p = await ping(*parse, n)
     if p != None:
         p = (p * 100).__round__()
-        result["ss://{}#{}@SafaProxy".format(part1, country)] = p
+        result["{}@SafaProxy".format(ss)] = p
 
 
 async def gather():
