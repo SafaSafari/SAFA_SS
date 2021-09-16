@@ -6,6 +6,10 @@ import json
 from aiohttp import ClientSession
 from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
+import ssl
+import urllib3
+urllib3.disable_warnings()
+ssl._create_default_https_context = ssl._create_unverified_context
 
 result = {}
 
