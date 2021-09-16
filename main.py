@@ -35,8 +35,8 @@ async def get(proxy, send=False):
 async def send(send, proxy):
     if not sys.argv[2]:
         return
-    proxy = 'socks5h://{}'.format(proxy)
-    connector = ProxyConnector.from_url(proxy)
+    proxy = 'socks5://{}'.format(proxy)
+    connector = ProxyConnector.from_url(proxy, rdns=True)
     async with ClientSession(connector=connector) as session:
         async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}, ssl=False):
             pass  # :)
