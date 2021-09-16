@@ -60,9 +60,7 @@ async def upload_github(file):
     with open(file, 'r') as f:
         await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')).decode('utf-8'), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'GET'))['sha']})
 
-
-async def main(n, ss):
-    global result
+async def parse_ss(ss):
     if ss[0:5] != "ss://":
         return
     part1 = ss[5:].split("#")
@@ -76,7 +74,11 @@ async def main(n, ss):
     part3 = part2.split("@")
     ip, port = part3[1].split(':')
     enc, password = part3[0].split(':')
-    p = await ping(ip, port, enc, password, n)
+    return [ip, port, enc, password]
+async def main(n, ss):
+    global result
+    parse = await parse_ss(ss)
+    p = await ping(*parse, n)
     if p != None:
         p = (p * 100).__round__()
         result["ss://{}#{}@SafaProxy".format(part1, country)] = p
@@ -98,7 +100,8 @@ async def gather():
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
-    await asyncio.gather(main(9999, list(sort.items())[0][0]))
+    ip, port, enc, password = await parse_ss(list(sort.items())[0][0])
+    await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, 9999, password, enc))
     await send(text, '127.0.0.1:9999')
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
