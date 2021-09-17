@@ -14,12 +14,18 @@ ssl._create_default_https_context = ssl._create_unverified_context
 result = {}
 
 
-async def run(cmd):
+async def run(cmd, ret = False):
+    print(cmd)
     proc = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE)
-
+    if ret:
+        stdout, stderr = await proc.communicate()
+        if proc.returncode == 0:
+            return stdout
+        else:
+            return False
 
 async def get(proxy, send=False):
     proxy = 'socks5://{}'.format(proxy)
@@ -99,6 +105,7 @@ async def gather():
         await asyncio.gather(*[main(n+3333, proxies[n]) for n in range(0, len(proxies) - 1)])
         await run('killall ss-local')
         print(str(source.index(proxies[0])) + '/' + str(len(source)), end="\r")
+        await asyncio.sleep(3)
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
     text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
@@ -106,7 +113,6 @@ async def gather():
         server, str(ping)) for server, ping in list(sort.items())[:10]))
     ip, port, enc, password = await parse_ss(list(sort.items())[0][0])
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, 9999, password, enc))
-    await send(text, '127.0.0.1:9999')
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
     with open("SUBSCRIBE", "w+") as f:
@@ -114,6 +120,7 @@ async def gather():
                 for server, ping in list(sort.items())[:10])).decode('utf-8'))
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
+    await send(text, '127.0.0.1:9999')
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(gather())
