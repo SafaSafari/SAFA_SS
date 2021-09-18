@@ -43,7 +43,9 @@ async def get(proxy, send=False):
 
 
 async def send(send, proxy):
-    if not sys.argv[2]:
+    try:
+        sys.argv[2]:
+    except IndexError:
         return
     proxy = 'socks5://{}'.format(proxy)
     connector = ProxyConnector.from_url(proxy, rdns=True)
@@ -59,7 +61,9 @@ async def ping(ip, port, enc, password, n):
 
 
 async def github(api, method, data={}):
-    if not sys.argv[1]:
+    try:
+        sys.argv[1]:
+    except IndexError:
         return
     async with ClientSession() as session:
         async with session.request(method, "https://api.github.com/{}".format(api), data=json.dumps(data) if len(data) > 0 else None, headers={'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'SafaSafari'}, auth=BasicAuth('SafaSafari', sys.argv[1])) as res:
