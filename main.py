@@ -44,7 +44,7 @@ async def get(proxy, send=False):
 
 async def send(send, proxy):
     try:
-        sys.argv[2]:
+        sys.argv[2]
     except IndexError:
         return
     proxy = 'socks5://{}'.format(proxy)
@@ -62,7 +62,7 @@ async def ping(ip, port, enc, password, n):
 
 async def github(api, method, data={}):
     try:
-        sys.argv[1]:
+        sys.argv[1]
     except IndexError:
         return
     async with ClientSession() as session:
