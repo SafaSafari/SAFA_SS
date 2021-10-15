@@ -50,7 +50,7 @@ async def send(send, proxy):
     proxy = 'socks5://{}'.format(proxy)
     connector = ProxyConnector.from_url(proxy, rdns=True)
     async with ClientSession(connector=connector) as session:
-        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@SafaProxy", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}, ssl=False):
+        async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@Proxy0110", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}, ssl=False):
             pass  # :)
 
 
@@ -95,7 +95,7 @@ async def main(n, ss):
     p = await ping(*parse, n)
     if p != None:
         p = (p * 100).__round__()
-        result["{}@SafaProxy".format(ss)] = p
+        result["{}@Proxy0110".format(ss)] = p
 
 
 async def gather():
@@ -112,7 +112,7 @@ async def gather():
         await asyncio.sleep(3)
     sort = {k: v for k, v in sorted(
         result.items(), key=lambda item: item[1])}
-    text = "Shadowsocks Proxy\n[Source](https://github.com/SafaSafari/SAFA_SS)\n\n"
+    text = "Shadowsocks Proxy\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
     ip, port, enc, password = await parse_ss(list(sort.items())[0][0])
