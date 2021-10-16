@@ -114,7 +114,7 @@ async def gather():
         result.items(), key=lambda item: item[1])}
     leaf = []
     for proxy in sort:
-        leaf.append("SS=ss,{},{},encrypt-method={},password={}{}@Proxy0110".format(*(await parse_ss(proxy))))
+        leaf.append("SS=ss,{},{},encrypt-method={},password={}{}".format(*(await parse_ss(proxy))))
     text = "Shadowsocks Proxy\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
