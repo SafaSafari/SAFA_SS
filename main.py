@@ -107,10 +107,11 @@ async def main(n, ss):
     global result
     ss = ss.strip()
     parse = await parse_ss(ss)
-    p = await ping(*parse, n)
-    if p != None:
-        p = (p * 100).__round__()
-        result["{}@Proxy0110".format(ss)] = p
+    if parse:
+        p = await ping(*parse, n)
+        if p != None:
+            p = (p * 100).__round__()
+            result["{}@Proxy0110".format(ss)] = p
 
 
 async def gather():
