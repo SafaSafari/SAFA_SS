@@ -91,6 +91,7 @@ async def parse_ss(ss):
 
 async def main(n, ss):
     global result
+    ss = ss.strip()
     parse = await parse_ss(ss)
     p = await ping(*parse, n)
     if p != None:
