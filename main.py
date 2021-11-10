@@ -100,7 +100,9 @@ async def parse_ss(ss):
         part2 = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
     part3 = part2.split("@")
     ip, port = part3[1].split(':')
-    enc, password = part3[0].split(':')
+    p2 = part3[0].split(':')
+    enc = p2[0]
+    password = p2[1]
     return [ip, port, enc, password, tag]
 
 async def main(n, ss):
