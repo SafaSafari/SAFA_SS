@@ -14,7 +14,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 result = {}
 
 async def run(cmd, ret = False):
-    print(cmd)
     proc = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,
@@ -83,6 +82,7 @@ async def parse_ss(ss):
         part2 = base64.b64decode(part1).decode('utf-8')
     else:
         p = part1.split("@")
+        print(p)
         part2 = base64.b64decode(p[0]).decode('utf-8') + "@" + p[1]
     part3 = part2.split("@")
     ip, port = part3[1].split(':')
