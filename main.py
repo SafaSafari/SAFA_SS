@@ -3,6 +3,7 @@ import asyncio
 import time
 import sys
 import json
+import re
 from aiohttp import ClientSession
 from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
@@ -24,6 +25,19 @@ async def run(cmd, ret = False):
             return stdout
         else:
             return False
+
+def decode_base64(data, altchars=b'+/'):
+    """Decode base64, padding being optional.
+
+    :param data: Base64 data as an ASCII byte string
+    :returns: The decoded byte string.
+
+    """
+    data = re.sub(rb'[^a-zA-Z0-9%s]+' % altchars, b'', data)  # normalize
+    missing_padding = len(data) % 4
+    if missing_padding:
+        data += b'='* (4 - missing_padding)
+    return base64.b64decode(data, altchars)
 
 async def get(proxy, send=False):
     proxy = 'socks5://{}'.format(proxy)
@@ -79,11 +93,11 @@ async def parse_ss(ss):
     tag = part1[1] if len(part1) > 1 else ''
     part1 = part1[0]
     if not part1.__contains__("@"):
-        part2 = base64.b64decode(part1).decode('utf-8')
+        part2 = decode_base64(part1).decode('utf-8')
     else:
         p = part1.split("@")
         print(p)
-        part2 = base64.b64decode(p[0]).decode('utf-8') + "@" + p[1]
+        part2 = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
     part3 = part2.split("@")
     ip, port = part3[1].split(':')
     enc, password = part3[0].split(':')
