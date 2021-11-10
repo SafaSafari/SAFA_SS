@@ -77,7 +77,7 @@ async def parse_ss(ss):
     if ss[0:5] != "ss://":
         return
     part1 = ss[5:].split("#")
-    tag = part1[1]
+    tag = part1[1] if len(part1) > 1 else ''
     part1 = part1[0]
     if not part1.__contains__("@"):
         part2 = base64.b64decode(part1).decode('utf-8')
