@@ -136,6 +136,9 @@ async def gather():
     text = "Shadowsocks Proxy\n\n"
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
+    sslocal = []
+    for proxy in sort:
+        sslocal.append("ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*(await parse_ss(proxy))))
     ip, port, enc, password, tag = await parse_ss(list(sort.items())[0][0])
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, 9999, password, enc))
     with open('ss.txt', 'w+') as f:
@@ -144,12 +147,16 @@ async def gather():
     with open('leaf.txt', 'w+') as f:
         f.write("\n".join(leaf))
 
+    with open('ss-local.txt', 'w+') as f:
+        f.write("\n".join(leaf))
+
     with open("SUBSCRIBE", "w+") as f:
         f.write(base64.b64encode(b"\n".join(server.encode('utf-8')
                 for server, ping in list(sort.items())[:10])).decode('utf-8'))
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
     await upload_github('leaf.txt')
+    await upload_github('ss-local.txt')
     await send(text, '127.0.0.1:9999')
 
 loop = asyncio.get_event_loop()
