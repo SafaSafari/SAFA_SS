@@ -96,7 +96,6 @@ async def parse_ss(ss):
         part2 = decode_base64(part1).decode('utf-8')
     else:
         p = part1.split("@")
-        print(p)
         part2 = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
     part3 = part2.split("@")
     ip, port = part3[1].split(':')
