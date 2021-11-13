@@ -444,3 +444,12 @@ ss://YWVzLTI1Ni1nY206c3V1Y1NlVkxtdDZQUUtBUDc3TnRHdzl4QDg5LjIzOC4xMzAuMjI3OjQ5MzM
         ss://YWVzLTEyOC1nY206aHR0cHM6Ly9kbGoudGYvc3Nyc3Vi@ss4.ssrsub.com:3443/?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3Dn46hm52773.wns.windows.com#@SSRSUB-%E5%8A%A0%E6%8B%BF%E5%A4%A7ss04-%E4%BB%98%E8%B4%B9%E6%8E%A8%E8%8D%90/ssrsub
         ss://YWVzLTEyOC1nY206c3VvLnl0L3NzcnN1Yg==@ss5.ssrsub.com:10443/?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3Dn46hm52773.wns.windows.com#@SSRSUB-%E5%8A%A0%E6%8B%BF%E5%A4%A7ss05-%E4%BB%98%E8%B4%B9%E6%8E%A8%E8%8D%90/ssrsub
         ss://YWVzLTEyOC1nY206aHR0cHM6Ly9kbGoudGYvc3Nyc3Vi@ss6.ssrsub.com:3443/?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3Dn46hm52773.wns.windows.com#@SSRSUB-%E5%8A%A0%E6%8B%BF%E5%A4%A7ss06-%E4%BB%98%E8%B4%B9%E6%8E%A8%E8%8D%90/ssrsub
+        
+        
+        
+        ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8@95.85.90.181:804#%D9%81%D8%B1%D8%A7%D9%86%D8%B3%D9%87%20%F0%9F%87%A8%F0%9F%87%B5
+ss://YWVzLTI1Ni1nY206RFBOSnJ3aHMzOEI0UXRrV2dYWk5id2c0@193.29.107.227:48577#%D8%AF%D8%A7%D9%86%D9%85%D8%A7%D8%B1%DA%A9%20%DB%B2%20%F0%9F%87%A9%F0%9F%87%B0
+ss://YWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2@84.17.55.133:33992#%D9%84%D9%87%D8%B3%D8%AA%D8%A7%D9%86%20%F0%9F%87%B5%F0%9F%87%B1
+ss://YWVzLTI1Ni1jZmI6dGVhbUBkZS5ic2FwaS5pcjozNDQz#FreeNet_Host
+ss://YWVzLTI1Ni1jZmI6dGVhbUBkYzEuZm5ob3N0Lnh5ejozNDQz#FreeNet_Host
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnaXNmMFNCUGltcXY@144.91.109.120:443/?outline=1
