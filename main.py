@@ -147,7 +147,7 @@ async def gather():
         f.write("\n".join(leaf))
 
     with open('ss-local.txt', 'w+') as f:
-        f.write("\n".join(leaf))
+        f.write("\n".join(sslocal))
 
     with open("SUBSCRIBE", "w+") as f:
         f.write(base64.b64encode(b"\n".join(server.encode('utf-8')
