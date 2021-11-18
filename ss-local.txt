@@ -1,322 +1,321 @@
-ss-local -s 37.1.192.129 -p 56065 -l 3993 -m aes-256-cfb -k q3cp9dH # German@Proxy0110
-ss-local -s 45.12.223.211 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%204@Proxy0110
-ss-local -s 91.219.215.38 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%203@Proxy0110
-ss-local -s 91.219.215.67 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%201@Proxy0110
-ss-local -s 91.219.215.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%202@Proxy0110
-ss-local -s 138.199.17.130 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%204@Proxy0110
-ss-local -s 156.146.62.41 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CH%20%F0%9F%87%A8%F0%9F%87%AD%20Zurich%202@Proxy0110
-ss-local -s 194.68.225.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG4@Proxy0110
-ss-local -s 172.99.190.153 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%205@Proxy0110
-ss-local -s 82.102.19.181 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%203@Proxy0110
-ss-local -s 188.95.55.123 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%203@Proxy0110
-ss-local -s 143.244.57.81 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Paris%202@Proxy0110
-ss-local -s 156.146.33.66 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DE%20%F0%9F%87%A9%F0%9F%87%AA%20Berlin%202@Proxy0110
+ss-local -s 94.20.154.61 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%201@Proxy0110
 ss-local -s 156.146.33.65 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DE%20%F0%9F%87%A9%F0%9F%87%AA%20Berlin%201@Proxy0110
-ss-local -s 143.244.42.76 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%203@Proxy0110
-ss-local -s 89.187.168.44 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%201@Proxy0110
-ss-local -s 89.187.168.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%203@Proxy0110
-ss-local -s 37.19.195.79 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%204@Proxy0110
-ss-local -s 5.226.139.232 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20London%204@Proxy0110
-ss-local -s 185.134.22.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20London%201@Proxy0110
-ss-local -s 141.95.0.26 -p 826 -l 3993 -m chacha20-ietf-poly1305 -k sF43Xt2gONqcgFX563 # Private%20VPN%20France%20%F0%9F%87%AB%F0%9F%87%B7%20Paris@Proxy0110
-ss-local -s 176.10.80.6 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # GB1@Proxy0110
-ss-local -s 194.68.225.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG1@Proxy0110
-ss-local -s 172.99.190.153 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%210@Proxy0110
-ss-local -s 172.99.190.139 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%206@Proxy0110
-ss-local -s 172.99.190.149 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%208@Proxy0110
-ss-local -s 172.99.190.35 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%228@Proxy0110
-ss-local -s 188.95.55.120 -p 42166 -l 3993 -m aes-256-gcm -k H9Dbn3szZMqLR3NpgEFEPCKb # 
-ss-local -s 188.95.55.120 -p 37588 -l 3993 -m aes-256-gcm -k kD9vkjnE6dsUzwQfvKkPkQAd # 
-ss-local -s 188.95.55.114 -p 38742 -l 3993 -m aes-256-gcm -k DKXfWwc4ebscpXTKpbt85rSH # 
-ss-local -s 188.95.55.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%201@Proxy0110
-ss-local -s 188.95.55.125 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%202@Proxy0110
-ss-local -s 185.246.208.106 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%202@Proxy0110
-ss-local -s 185.246.208.72 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%201@Proxy0110
-ss-local -s 193.29.107.125 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DK%20%F0%9F%87%A9%F0%9F%87%B0%20Copenhagen%202@Proxy0110
-ss-local -s 212.102.35.204 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%202@Proxy0110
-ss-local -s 156.146.62.46 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CH%20%F0%9F%87%A8%F0%9F%87%AD%20Zurich%204@Proxy0110
-ss-local -s 62.197.144.4 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%202@Proxy0110
-ss-local -s 89.187.168.46 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%202@Proxy0110
-ss-local -s 185.76.9.55 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%204@Proxy0110
-ss-local -s 188.95.55.120 -p 31944 -l 3993 -m aes-256-gcm -k aYNeKDMzYQYw4KbUbJA8Wszq # 
-ss-local -s 188.95.55.114 -p 41676 -l 3993 -m aes-256-gcm -k z6pH3RyttkRWhJ5tpRyt6dYk # 
-ss-local -s 188.95.55.114 -p 45329 -l 3993 -m aes-256-gcm -k CXSjgD7u7Ar7GxkZ4CgTMUsj # 
-ss-local -s 188.95.55.120 -p 35294 -l 3993 -m aes-256-gcm -k J9Y2ncrdPEC38gwydNFFGBna # 
-ss-local -s 185.153.151.160 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%202@Proxy0110
-ss-local -s 82.102.16.99 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DE%20%F0%9F%87%A9%F0%9F%87%AA%20Frankfurt%20am%20Main%203@Proxy0110
+ss-local -s 62.212.239.45 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%203@Proxy0110
 ss-local -s 143.244.42.91 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%204@Proxy0110
-ss-local -s 213.152.165.104 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%201@Proxy0110
-ss-local -s 89.45.7.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DK%20%F0%9F%87%A9%F0%9F%87%B0%20Copenhagen%204@Proxy0110
-ss-local -s 188.92.78.142 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LV%20%F0%9F%87%B1%F0%9F%87%BB%20Riga%201@Proxy0110
-ss-local -s 185.76.9.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%203@Proxy0110
-ss-local -s 89.238.130.253 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Manchester%201@Proxy0110
-ss-local -s 146.0.36.23 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # XY%20VPN%20Germany%20%F0%9F%87%A9%F0%9F%87%AA%20Dusseldorf%201@Proxy0110
+ss-local -s 188.241.120.16 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Switzerland-Zurich@Proxy0110
+ss-local -s 37.1.192.129 -p 56065 -l 3993 -m aes-256-cfb -k q3cp9dH # German@Proxy0110
 ss-local -s 198.244.150.26 -p 826 -l 3993 -m chacha20-ietf-poly1305 -k sF43Xt2gONqcgFX563 # Private%20VPN%20UK%20%F0%9F%87%AC%F0%9F%87%A7%20London@Proxy0110
-ss-local -s 194.68.225.104 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG2@Proxy0110
-ss-local -s 84.39.114.86 -p 49396 -l 3993 -m aes-256-gcm -k BdRWC38L5JUDMTYNNxJGcUwB # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%203@Proxy0110
-ss-local -s 172.99.190.158 -p 2375 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%227@Proxy0110
-ss-local -s 188.95.55.120 -p 45948 -l 3993 -m aes-256-gcm -k j76EXqJcQhuQTr3EvUf7xaK9 # 
-ss-local -s 188.95.55.120 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # 
-ss-local -s 188.95.55.119 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
-ss-local -s 188.95.55.120 -p 49126 -l 3993 -m aes-256-gcm -k wrCaGtrUbzeRqQLdc8Kmk3Nd # 
-ss-local -s 188.95.55.120 -p 33992 -l 3993 -m aes-256-gcm -k 8n6pwAcrrv2pj6tFY2p3TbQ6 # 
-ss-local -s 188.95.55.120 -p 50024 -l 3993 -m aes-256-gcm -k b2jDPHUQxCNa2KmGHZjy7C4B # 
-ss-local -s 188.95.55.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # 
-ss-local -s 188.95.55.120 -p 40093 -l 3993 -m aes-256-gcm -k x23Z4LGkGDkThZ9Kaz4DURQp # 
-ss-local -s 188.95.55.120 -p 34815 -l 3993 -m aes-256-gcm -k LkFAzkzXkSCRYa2CsRdL8cGb # 
+ss-local -s 188.95.55.114 -p 42304 -l 3993 -m aes-256-gcm -k p26v2JwhQVHDHsXk66fXt56r # 
+ss-local -s 91.219.215.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%202@Proxy0110
+ss-local -s 185.246.208.106 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%202@Proxy0110
+ss-local -s 138.199.17.130 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%204@Proxy0110
+ss-local -s 45.12.223.211 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%204@Proxy0110
+ss-local -s 212.102.35.204 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%202@Proxy0110
+ss-local -s 143.244.42.76 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%203@Proxy0110
+ss-local -s 213.152.165.104 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NL%20%F0%9F%87%B3%F0%9F%87%B1%20Amsterdam%201@Proxy0110
+ss-local -s 82.102.16.99 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DE%20%F0%9F%87%A9%F0%9F%87%AA%20Frankfurt%20am%20Main%203@Proxy0110
+ss-local -s 176.222.34.119 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%201@Proxy0110
+ss-local -s 188.95.55.120 -p 47861 -l 3993 -m aes-256-gcm -k LJcChRsGQRhywrtXUU55TLTu # 
 ss-local -s 188.95.55.114 -p 49339 -l 3993 -m aes-256-gcm -k suucSeVLmt6PQKAP77NtGw9x # 
-ss-local -s 188.95.55.114 -p 40093 -l 3993 -m aes-256-gcm -k x23Z4LGkGDkThZ9Kaz4DURQp # 
-ss-local -s 194.110.115.83 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%201@Proxy0110
-ss-local -s 188.95.55.108 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%204@Proxy0110
-ss-local -s 185.153.151.167 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%201@Proxy0110
-ss-local -s 37.28.156.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Gdansk%204@Proxy0110
+ss-local -s 188.95.55.114 -p 38742 -l 3993 -m aes-256-gcm -k DKXfWwc4ebscpXTKpbt85rSH # 
+ss-local -s 82.102.19.181 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%203@Proxy0110
+ss-local -s 91.219.215.67 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%201@Proxy0110
 ss-local -s 5.187.53.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Gdansk%202@Proxy0110
+ss-local -s 37.28.156.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Gdansk%204@Proxy0110
+ss-local -s 185.246.208.108 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%203@Proxy0110
 ss-local -s 5.187.53.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Gdansk%201@Proxy0110
-ss-local -s 185.153.151.187 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%203@Proxy0110
 ss-local -s 143.244.57.118 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Paris%203@Proxy0110
 ss-local -s 143.244.57.117 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Paris%204@Proxy0110
+ss-local -s 185.166.84.79 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Marseille%201@Proxy0110
 ss-local -s 138.199.16.130 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Marseille%204@Proxy0110
 ss-local -s 82.102.26.62 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IT%20%F0%9F%87%AE%F0%9F%87%B9%20Rome%201@Proxy0110
-ss-local -s 185.76.8.218 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SK%20%F0%9F%87%B8%F0%9F%87%B0%20Bratislava%203@Proxy0110
-ss-local -s 188.95.55.120 -p 47027 -l 3993 -m aes-256-gcm -k Vt5pBJFwdtNB26cJbTXxm88Z # 
-ss-local -s 188.95.55.120 -p 41992 -l 3993 -m aes-256-gcm -k XmQSxDCn5ehpcq6DBYms8FJf # 
-ss-local -s 188.95.55.114 -p 49468 -l 3993 -m aes-256-gcm -k LsYSQDxmPj9AcWpSX5HrYfu6 # 
-ss-local -s 188.95.55.114 -p 33148 -l 3993 -m aes-256-gcm -k CMduaFXddcQbwNAAs7xFDnc8 # 
-ss-local -s 188.95.55.114 -p 33992 -l 3993 -m aes-256-gcm -k 8n6pwAcrrv2pj6tFY2p3TbQ6 # 
-ss-local -s 188.95.55.114 -p 34815 -l 3993 -m aes-256-gcm -k LkFAzkzXkSCRYa2CsRdL8cGb # 
+ss-local -s 172.99.190.158 -p 2375 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%227@Proxy0110
+ss-local -s 188.95.55.120 -p 40093 -l 3993 -m aes-256-gcm -k x23Z4LGkGDkThZ9Kaz4DURQp # 
 ss-local -s 188.95.55.114 -p 44628 -l 3993 -m aes-256-gcm -k VASQbVcukHfdBGmeS9L7Z8TT # 
-ss-local -s 194.110.115.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%202@Proxy0110
+ss-local -s 188.95.55.114 -p 45329 -l 3993 -m aes-256-gcm -k CXSjgD7u7Ar7GxkZ4CgTMUsj # 
+ss-local -s 188.95.55.120 -p 35294 -l 3993 -m aes-256-gcm -k J9Y2ncrdPEC38gwydNFFGBna # 
+ss-local -s 188.95.55.120 -p 44742 -l 3993 -m aes-256-gcm -k QCStKzZ56SHBc4tL7stCEqqd # 
+ss-local -s 194.110.115.86 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%204@Proxy0110
+ss-local -s 188.95.55.108 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%204@Proxy0110
+ss-local -s 188.95.55.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%201@Proxy0110
+ss-local -s 141.95.0.26 -p 826 -l 3993 -m chacha20-ietf-poly1305 -k sF43Xt2gONqcgFX563 # Private%20VPN%20France%20%F0%9F%87%AB%F0%9F%87%B7%20Paris@Proxy0110
+ss-local -s 88.208.7.204 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # NL1@Proxy0110
+ss-local -s 194.68.225.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG1@Proxy0110
+ss-local -s 172.99.190.153 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%205@Proxy0110
+ss-local -s 172.99.190.139 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%206@Proxy0110
+ss-local -s 172.99.190.149 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%208@Proxy0110
+ss-local -s 172.99.190.35 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%222@Proxy0110
+ss-local -s 172.99.190.35 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%228@Proxy0110
+ss-local -s 188.95.55.114 -p 40093 -l 3993 -m aes-256-gcm -k x23Z4LGkGDkThZ9Kaz4DURQp # 
+ss-local -s 188.95.55.120 -p 34815 -l 3993 -m aes-256-gcm -k LkFAzkzXkSCRYa2CsRdL8cGb # 
+ss-local -s 188.95.55.120 -p 37588 -l 3993 -m aes-256-gcm -k kD9vkjnE6dsUzwQfvKkPkQAd # 
+ss-local -s 188.95.55.114 -p 41676 -l 3993 -m aes-256-gcm -k z6pH3RyttkRWhJ5tpRyt6dYk # 
+ss-local -s 188.95.55.114 -p 47027 -l 3993 -m aes-256-gcm -k Vt5pBJFwdtNB26cJbTXxm88Z # 
+ss-local -s 91.219.215.38 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # NO%20%F0%9F%87%B3%F0%9F%87%B4%20Oslo%203@Proxy0110
+ss-local -s 185.246.208.72 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%201@Proxy0110
+ss-local -s 138.199.16.142 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Marseille%203@Proxy0110
+ss-local -s 156.146.62.46 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CH%20%F0%9F%87%A8%F0%9F%87%AD%20Zurich%204@Proxy0110
+ss-local -s 62.197.144.4 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%202@Proxy0110
+ss-local -s 37.19.195.79 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%204@Proxy0110
+ss-local -s 185.76.8.218 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SK%20%F0%9F%87%B8%F0%9F%87%B0%20Bratislava%203@Proxy0110
+ss-local -s 5.226.139.232 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20London%204@Proxy0110
+ss-local -s 185.134.22.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20London%201@Proxy0110
+ss-local -s 146.0.36.23 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # XY%20VPN%20Germany%20%F0%9F%87%A9%F0%9F%87%AA%20Dusseldorf%201@Proxy0110
+ss-local -s 172.99.190.153 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%210@Proxy0110
+ss-local -s 193.29.107.227 -p 48577 -l 3993 -m aes-256-gcm -k DPNJrwhs38B4QtkWgXZNbwg4 # %D8%AF%D8%A7%D9%86%D9%85%D8%A7%D8%B1%DA%A9%20%DB%B2%20%F0%9F%87%A9%F0%9F%87%B0@Proxy0110
+ss-local -s 188.95.55.120 -p 50024 -l 3993 -m aes-256-gcm -k b2jDPHUQxCNa2KmGHZjy7C4B # 
+ss-local -s 188.95.55.125 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%202@Proxy0110
 ss-local -s 143.244.57.103 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Paris%201@Proxy0110
-ss-local -s 62.212.239.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%204@Proxy0110
-ss-local -s 62.212.239.45 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%203@Proxy0110
+ss-local -s 143.244.57.81 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Paris%202@Proxy0110
+ss-local -s 94.20.154.59 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%202@Proxy0110
+ss-local -s 185.76.9.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%203@Proxy0110
+ss-local -s 185.76.9.55 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%204@Proxy0110
+ss-local -s 95.85.90.181 -p 804 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # %D9%81%D8%B1%D8%A7%D9%86%D8%B3%D9%87%20%F0%9F%87%A8%F0%9F%87%B5@Proxy0110
+ss-local -s 188.95.55.120 -p 38620 -l 3993 -m aes-256-gcm -k Kquv5UhvZXNMemAQy8DxZ7qn # 
+ss-local -s 188.95.55.120 -p 47027 -l 3993 -m aes-256-gcm -k Vt5pBJFwdtNB26cJbTXxm88Z # 
+ss-local -s 188.95.55.120 -p 49126 -l 3993 -m aes-256-gcm -k wrCaGtrUbzeRqQLdc8Kmk3Nd # 
+ss-local -s 188.95.55.120 -p 33992 -l 3993 -m aes-256-gcm -k 8n6pwAcrrv2pj6tFY2p3TbQ6 # 
+ss-local -s 188.95.55.120 -p 49202 -l 3993 -m aes-256-gcm -k btzEYXKZxnR7g6H2vFTQK5TD # 
+ss-local -s 188.95.55.114 -p 33148 -l 3993 -m aes-256-gcm -k CMduaFXddcQbwNAAs7xFDnc8 # 
+ss-local -s 188.95.55.114 -p 34815 -l 3993 -m aes-256-gcm -k LkFAzkzXkSCRYa2CsRdL8cGb # 
+ss-local -s 188.95.55.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # 
 ss-local -s 193.29.107.181 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DK%20%F0%9F%87%A9%F0%9F%87%B0%20Copenhagen%203@Proxy0110
+ss-local -s 89.187.168.46 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%202@Proxy0110
+ss-local -s 89.164.99.111 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%204@Proxy0110
 ss-local -s 5.157.13.69 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IE%20%F0%9F%87%AE%F0%9F%87%AA%20Dublin%202@Proxy0110
-ss-local -s 194.37.98.220 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Manchester%202@Proxy0110
-ss-local -s 193.235.207.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # CZ1@Proxy0110
-ss-local -s 89.238.130.227 -p 49339 -l 3993 -m aes-256-gcm -k suucSeVLmt6PQKAP77NtGw9x # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%201@Proxy0110
+ss-local -s 156.146.50.102 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # UA%20%F0%9F%87%BA%F0%9F%87%A6%20Kyiv@Proxy0110
+ss-local -s 161.97.131.160 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DE2@Proxy0110
+ss-local -s 194.68.225.104 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG2@Proxy0110
+ss-local -s 188.95.55.114 -p 31572 -l 3993 -m aes-256-gcm -k n8w4StnbVD9dmXYn4Ajt87EA # 
+ss-local -s 188.95.55.120 -p 45948 -l 3993 -m aes-256-gcm -k j76EXqJcQhuQTr3EvUf7xaK9 # 
 ss-local -s 188.95.55.114 -p 35294 -l 3993 -m aes-256-gcm -k J9Y2ncrdPEC38gwydNFFGBna # 
+ss-local -s 188.95.55.120 -p 41992 -l 3993 -m aes-256-gcm -k XmQSxDCn5ehpcq6DBYms8FJf # 
+ss-local -s 188.95.55.120 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # 
 ss-local -s 188.95.55.114 -p 40282 -l 3993 -m aes-256-gcm -k Pvvaw486867D2w4yctL2ULTQ # 
+ss-local -s 188.95.55.114 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
+ss-local -s 188.95.55.120 -p 42166 -l 3993 -m aes-256-gcm -k H9Dbn3szZMqLR3NpgEFEPCKb # 
 ss-local -s 188.95.55.114 -p 42816 -l 3993 -m aes-256-gcm -k tBKBf4pVzNCFKdbPgvwrNXq3 # 
 ss-local -s 188.95.55.114 -p 49396 -l 3993 -m aes-256-gcm -k BdRWC38L5JUDMTYNNxJGcUwB # 
-ss-local -s 196.196.156.106 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Sweden-Stockholm@Proxy0110
-ss-local -s 31.171.154.220 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%204@Proxy0110
-ss-local -s 176.222.34.119 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%201@Proxy0110
-ss-local -s 92.38.138.139 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%201@Proxy0110
+ss-local -s 188.95.55.114 -p 33992 -l 3993 -m aes-256-gcm -k 8n6pwAcrrv2pj6tFY2p3TbQ6 # 
+ss-local -s 188.95.55.120 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
+ss-local -s 188.95.55.114 -p 49468 -l 3993 -m aes-256-gcm -k LsYSQDxmPj9AcWpSX5HrYfu6 # 
+ss-local -s 188.95.55.123 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Antwerp%203@Proxy0110
+ss-local -s 194.110.115.83 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%201@Proxy0110
+ss-local -s 185.153.151.179 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%204@Proxy0110
+ss-local -s 185.108.106.91 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%201@Proxy0110
+ss-local -s 185.108.106.175 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%202@Proxy0110
+ss-local -s 156.146.62.41 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CH%20%F0%9F%87%A8%F0%9F%87%AD%20Zurich%202@Proxy0110
+ss-local -s 89.187.168.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%203@Proxy0110
+ss-local -s 194.37.98.220 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Manchester%202@Proxy0110
 ss-local -s 192.145.126.131 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Manchester%203@Proxy0110
-ss-local -s 161.97.131.160 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DE2@Proxy0110
+ss-local -s 172.255.248.35 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # Luxembourg%2F@Proxy0110
+ss-local -s 194.71.227.178 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BE1@Proxy0110
+ss-local -s 89.238.130.227 -p 49339 -l 3993 -m aes-256-gcm -k suucSeVLmt6PQKAP77NtGw9x # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%201@Proxy0110
+ss-local -s 185.153.151.167 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%201@Proxy0110
+ss-local -s 185.153.151.160 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%202@Proxy0110
+ss-local -s 193.29.107.125 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DK%20%F0%9F%87%A9%F0%9F%87%B0%20Copenhagen%202@Proxy0110
+ss-local -s 188.92.78.142 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LV%20%F0%9F%87%B1%F0%9F%87%BB%20Riga%201@Proxy0110
+ss-local -s 185.108.105.57 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%202@Proxy0110
+ss-local -s 185.108.105.33 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%203@Proxy0110
+ss-local -s 213.136.80.36 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DE1@Proxy0110
 ss-local -s 194.68.225.104 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG3@Proxy0110
-ss-local -s 188.95.55.114 -p 47553 -l 3993 -m aes-256-gcm -k t2JnnFqjDMmzWurseJPgBsYY # 
-ss-local -s 188.241.120.16 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Switzerland-Zurich@Proxy0110
-ss-local -s 62.197.144.6 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%204@Proxy0110
+ss-local -s 185.153.151.187 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%203@Proxy0110
+ss-local -s 185.108.106.174 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%203@Proxy0110
+ss-local -s 89.45.7.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DK%20%F0%9F%87%A9%F0%9F%87%B0%20Copenhagen%204@Proxy0110
+ss-local -s 62.197.144.3 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%201@Proxy0110
+ss-local -s 185.102.217.196 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%203@Proxy0110
+ss-local -s 195.181.166.228 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%201@Proxy0110
+ss-local -s 89.238.130.253 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Manchester%201@Proxy0110
+ss-local -s 37.252.5.234 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # EE1@Proxy0110
+ss-local -s 193.235.207.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # CZ1@Proxy0110
+ss-local -s 194.68.225.28 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BG4@Proxy0110
+ss-local -s 31.171.154.219 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%203@Proxy0110
+ss-local -s 31.171.154.220 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%204@Proxy0110
+ss-local -s 31.171.154.147 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%202@Proxy0110
+ss-local -s 92.38.138.143 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%204@Proxy0110
+ss-local -s 185.153.150.86 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Valencia%202@Proxy0110
+ss-local -s 185.108.105.127 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%201@Proxy0110
+ss-local -s 185.225.28.85 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # MK%20%F0%9F%87%B2%F0%9F%87%B0%20Skopje@Proxy0110
+ss-local -s 95.174.23.218 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # IT1@Proxy0110
+ss-local -s 192.71.249.240 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BE2@Proxy0110
+ss-local -s 192.121.87.89 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # MD1@Proxy0110
+ss-local -s 194.71.130.160 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # HU1@Proxy0110
+ss-local -s 194.68.32.29 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # NO2@Proxy0110
 ss-local -s 185.252.222.115 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IE%20%F0%9F%87%AE%F0%9F%87%AA%20Dublin%201@Proxy0110
+ss-local -s 92.38.138.139 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%201@Proxy0110
+ss-local -s 92.38.138.151 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%202@Proxy0110
+ss-local -s 195.158.249.62 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%203@Proxy0110
+ss-local -s 195.158.249.61 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%201@Proxy0110
+ss-local -s 89.37.95.185 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Madrid%204@Proxy0110
+ss-local -s 185.108.105.82 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%204@Proxy0110
+ss-local -s 185.213.21.6 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # XY%20VPN%20Italy%20%F0%9F%87%AE%F0%9F%87%B9%20Milan%202@Proxy0110
+ss-local -s 46.246.93.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # Sweden%20%F0%9F%87%B8%F0%9F%87%AA%20@Proxy0110
+ss-local -s 192.36.27.79 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DK2@Proxy0110
+ss-local -s 192.36.27.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DK1@Proxy0110
+ss-local -s 46.246.93.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SE1@Proxy0110
+ss-local -s 46.29.218.6 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%226@Proxy0110
+ss-local -s 89.164.99.136 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%203@Proxy0110
+ss-local -s 185.252.222.117 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IE%20%F0%9F%87%AE%F0%9F%87%AA%20Dublin%203@Proxy0110
+ss-local -s 194.39.127.181 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%204@Proxy0110
 ss-local -s 89.37.95.14 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Madrid%202@Proxy0110
 ss-local -s 89.37.95.13 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Madrid%201@Proxy0110
-ss-local -s 195.181.166.228 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SE%20%F0%9F%87%B8%F0%9F%87%AA%20Stockholm%201@Proxy0110
-ss-local -s 88.208.7.204 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # NL1@Proxy0110
-ss-local -s 194.71.227.178 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BE1@Proxy0110
-ss-local -s 95.85.90.181 -p 804 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # %D9%81%D8%B1%D8%A7%D9%86%D8%B3%D9%87%20%F0%9F%87%A8%F0%9F%87%B5@Proxy0110
-ss-local -s 185.153.151.179 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # LU%20%F0%9F%87%B1%F0%9F%87%BA%20Luxembourg%204@Proxy0110
-ss-local -s 138.199.16.142 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Marseille%203@Proxy0110
-ss-local -s 62.197.144.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%203@Proxy0110
-ss-local -s 185.174.159.61 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # EE%20%F0%9F%87%AA%F0%9F%87%AA%20Tallinn%201@Proxy0110
-ss-local -s 185.252.222.117 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IE%20%F0%9F%87%AE%F0%9F%87%AA%20Dublin%203@Proxy0110
-ss-local -s 185.188.61.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Barcelona%202@Proxy0110
-ss-local -s 89.37.95.185 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Madrid%204@Proxy0110
-ss-local -s 185.153.150.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Valencia%204@Proxy0110
-ss-local -s 194.33.40.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # MD%20%F0%9F%87%B2%F0%9F%87%A9%20Chisinau@Proxy0110
-ss-local -s 185.213.21.6 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # XY%20VPN%20Italy%20%F0%9F%87%AE%F0%9F%87%B9%20Milan%202@Proxy0110
-ss-local -s 172.255.248.35 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # Luxembourg%2F@Proxy0110
-ss-local -s 46.246.93.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SE1@Proxy0110
-ss-local -s 188.95.55.120 -p 44742 -l 3993 -m aes-256-gcm -k QCStKzZ56SHBc4tL7stCEqqd # 
-ss-local -s 188.95.55.120 -p 47861 -l 3993 -m aes-256-gcm -k LJcChRsGQRhywrtXUU55TLTu # 
-ss-local -s 185.108.106.91 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%201@Proxy0110
-ss-local -s 31.171.154.219 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%203@Proxy0110
 ss-local -s 89.37.95.16 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Madrid%203@Proxy0110
-ss-local -s 185.225.28.85 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # MK%20%F0%9F%87%B2%F0%9F%87%B0%20Skopje@Proxy0110
-ss-local -s 192.121.87.89 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # MD1@Proxy0110
-ss-local -s 188.95.55.120 -p 49202 -l 3993 -m aes-256-gcm -k btzEYXKZxnR7g6H2vFTQK5TD # 
-ss-local -s 188.95.55.114 -p 47027 -l 3993 -m aes-256-gcm -k Vt5pBJFwdtNB26cJbTXxm88Z # 
-ss-local -s 188.95.55.114 -p 42304 -l 3993 -m aes-256-gcm -k p26v2JwhQVHDHsXk66fXt56r # 
-ss-local -s 156.146.50.102 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # UA%20%F0%9F%87%BA%F0%9F%87%A6%20Kyiv@Proxy0110
-ss-local -s 37.252.5.234 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # EE1@Proxy0110
-ss-local -s 172.99.190.35 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%222@Proxy0110
-ss-local -s 193.29.107.227 -p 48577 -l 3993 -m aes-256-gcm -k DPNJrwhs38B4QtkWgXZNbwg4 # %D8%AF%D8%A7%D9%86%D9%85%D8%A7%D8%B1%DA%A9%20%DB%B2%20%F0%9F%87%A9%F0%9F%87%B0@Proxy0110
-ss-local -s 188.95.55.120 -p 38620 -l 3993 -m aes-256-gcm -k Kquv5UhvZXNMemAQy8DxZ7qn # 
-ss-local -s 188.95.55.120 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
-ss-local -s 188.95.55.114 -p 31572 -l 3993 -m aes-256-gcm -k n8w4StnbVD9dmXYn4Ajt87EA # 
-ss-local -s 188.95.55.114 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
-ss-local -s 31.171.155.83 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%201@Proxy0110
-ss-local -s 89.164.99.136 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%203@Proxy0110
-ss-local -s 194.39.127.181 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%204@Proxy0110
-ss-local -s 92.38.138.143 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%204@Proxy0110
+ss-local -s 185.188.61.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Barcelona%202@Proxy0110
+ss-local -s 185.153.150.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Valencia%204@Proxy0110
+ss-local -s 194.150.167.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GR%20%F0%9F%87%AC%F0%9F%87%B7%20Athens@Proxy0110
+ss-local -s 46.29.218.6 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %20ss@Proxy0110
+ss-local -s 185.102.217.195 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%202@Proxy0110
 ss-local -s 185.188.61.85 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Barcelona%203@Proxy0110
 ss-local -s 185.188.61.86 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Barcelona%204@Proxy0110
-ss-local -s 185.108.105.57 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%202@Proxy0110
-ss-local -s 194.150.167.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GR%20%F0%9F%87%AC%F0%9F%87%B7%20Athens@Proxy0110
-ss-local -s 46.246.93.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # Sweden%20%F0%9F%87%B8%F0%9F%87%AA%20@Proxy0110
-ss-local -s 151.236.30.184 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AT3@Proxy0110
-ss-local -s 192.36.27.79 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DK2@Proxy0110
-ss-local -s 185.153.150.86 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Valencia%202@Proxy0110
-ss-local -s 213.136.80.36 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DE1@Proxy0110
-ss-local -s 54.37.136.249 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # PL1@Proxy0110
-ss-local -s 95.174.23.218 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # IT1@Proxy0110
-ss-local -s 192.71.244.49 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SL1@Proxy0110
-ss-local -s 31.171.154.147 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%202@Proxy0110
-ss-local -s 185.102.217.196 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%203@Proxy0110
-ss-local -s 92.38.138.151 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%202@Proxy0110
-ss-local -s 185.108.105.33 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%203@Proxy0110
-ss-local -s 192.36.27.59 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # DK1@Proxy0110
-ss-local -s 192.71.249.240 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BE2@Proxy0110
-ss-local -s 94.20.154.61 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%201@Proxy0110
-ss-local -s 185.108.105.82 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%204@Proxy0110
-ss-local -s 45.43.19.82 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%204@Proxy0110
-ss-local -s 84.17.35.111 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20New%20York%201@Proxy0110
-ss-local -s 54.37.139.110 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # PL2@Proxy0110
-ss-local -s 194.110.115.86 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%204@Proxy0110
-ss-local -s 192.154.248.179 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%202@Proxy0110
-ss-local -s 94.20.154.59 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%202@Proxy0110
-ss-local -s 185.102.217.194 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%201@Proxy0110
-ss-local -s 185.102.217.195 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%202@Proxy0110
-ss-local -s 92.38.138.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%203@Proxy0110
 ss-local -s 82.102.26.171 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Barcelona%201@Proxy0110
-ss-local -s 195.158.249.61 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%201@Proxy0110
-ss-local -s 195.158.249.62 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%203@Proxy0110
+ss-local -s 62.197.144.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%203@Proxy0110
+ss-local -s 185.102.217.194 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RO%20%F0%9F%87%B7%F0%9F%87%B4%20Bucharest%201@Proxy0110
+ss-local -s 195.158.249.60 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%202@Proxy0110
+ss-local -s 196.196.156.106 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Sweden-Stockholm@Proxy0110
+ss-local -s 31.171.155.83 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AL%20%F0%9F%87%A6%F0%9F%87%B1%20Tirana%201@Proxy0110
+ss-local -s 62.197.144.6 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%204@Proxy0110
+ss-local -s 195.158.249.59 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%204@Proxy0110
+ss-local -s 54.37.139.110 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # PL2@Proxy0110
+ss-local -s 54.37.136.249 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # PL1@Proxy0110
+ss-local -s 151.236.30.184 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AT3@Proxy0110
+ss-local -s 45.43.19.82 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%204@Proxy0110
 ss-local -s 217.138.202.21 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BG%20%F0%9F%87%A7%F0%9F%87%AC%20Sofia@Proxy0110
-ss-local -s 134.195.196.60 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%207@Proxy0110
-ss-local -s 37.19.220.196 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%203@Proxy0110
-ss-local -s 37.19.220.201 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%201@Proxy0110
-ss-local -s 37.19.220.194 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%204@Proxy0110
-ss-local -s 83.217.9.76 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # RU2@Proxy0110
-ss-local -s 134.195.196.50 -p 3306 -l 3993 -m aes-256-gcm -k Y6R9pAtvxxzmGC # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%204@Proxy0110
-ss-local -s 38.107.226.146 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%229@Proxy0110
-ss-local -s 45.43.19.92 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%201@Proxy0110
-ss-local -s 37.19.220.199 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%202@Proxy0110
-ss-local -s 194.71.130.160 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # HU1@Proxy0110
-ss-local -s 46.29.218.6 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%226@Proxy0110
-ss-local -s 172.93.153.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Buffalo%201@Proxy0110
+ss-local -s 194.33.40.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # MD%20%F0%9F%87%B2%F0%9F%87%A9%20Chisinau@Proxy0110
 ss-local -s 84.17.35.103 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20New%20York%203@Proxy0110
-ss-local -s 213.174.130.129 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US1@Proxy0110
+ss-local -s 37.19.211.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CA%20%F0%9F%87%A8%F0%9F%87%A6%20Toronto@Proxy0110
+ss-local -s 84.39.114.86 -p 49396 -l 3993 -m aes-256-gcm -k BdRWC38L5JUDMTYNNxJGcUwB # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%203@Proxy0110
+ss-local -s 38.107.226.146 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%220@Proxy0110
+ss-local -s 38.107.226.146 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%229@Proxy0110
+ss-local -s 192.154.248.179 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%202@Proxy0110
 ss-local -s 213.174.159.246 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US3@Proxy0110
-ss-local -s 213.174.158.181 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US5@Proxy0110
-ss-local -s 167.88.63.11 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%216@Proxy0110
+ss-local -s 154.16.171.213 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%203@Proxy0110
+ss-local -s 37.19.220.201 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%201@Proxy0110
+ss-local -s 62.212.239.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AZ%20%F0%9F%87%A6%F0%9F%87%BF%20Baku%204@Proxy0110
+ss-local -s 84.17.35.111 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20New%20York%201@Proxy0110
+ss-local -s 209.216.92.8 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Tampa%201@Proxy0110
+ss-local -s 192.154.254.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%204@Proxy0110
+ss-local -s 155.254.29.163 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%201@Proxy0110
+ss-local -s 45.134.140.4 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%203@Proxy0110
+ss-local -s 138.199.2.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%202@Proxy0110
+ss-local -s 37.19.220.194 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%204@Proxy0110
+ss-local -s 37.19.220.199 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%202@Proxy0110
+ss-local -s 213.174.130.129 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US6@Proxy0110
+ss-local -s 134.195.196.60 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%207@Proxy0110
+ss-local -s 134.195.196.50 -p 3306 -l 3993 -m aes-256-gcm -k Y6R9pAtvxxzmGC # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%204@Proxy0110
+ss-local -s 198.57.27.218 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%224@Proxy0110
+ss-local -s 194.39.127.153 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%201@Proxy0110
+ss-local -s 194.39.127.154 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%202@Proxy0110
 ss-local -s 185.153.150.78 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ES%20%F0%9F%87%AA%F0%9F%87%B8%20Valencia%203@Proxy0110
-ss-local -s 167.88.63.119 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%214@Proxy0110
+ss-local -s 45.43.19.92 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Latham%201@Proxy0110
+ss-local -s 155.254.29.165 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%202@Proxy0110
+ss-local -s 37.19.220.196 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Ashburn%203@Proxy0110
+ss-local -s 129.227.219.22 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Mumbai@Proxy0110
 ss-local -s 198.57.27.225 -p 2375 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%215@Proxy0110
-ss-local -s 198.57.27.225 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%225@Proxy0110
-ss-local -s 195.47.194.98 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%202@Proxy0110
-ss-local -s 195.47.194.97 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%203@Proxy0110
-ss-local -s 172.93.146.210 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Buffalo%204@Proxy0110
-ss-local -s 213.174.130.130 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US2@Proxy0110
-ss-local -s 167.88.63.82 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%219@Proxy0110
-ss-local -s 167.88.63.99 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%221@Proxy0110
+ss-local -s 167.88.63.119 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%214@Proxy0110
 ss-local -s 167.88.63.82 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%223@Proxy0110
+ss-local -s 138.199.42.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Chicago%201@Proxy0110
+ss-local -s 5.189.202.11 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # KZ%20%F0%9F%87%B0%F0%9F%87%BF%20Oral@Proxy0110
+ss-local -s 213.174.159.247 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US4@Proxy0110
+ss-local -s 213.174.130.129 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US1@Proxy0110
+ss-local -s 213.174.158.181 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US5@Proxy0110
+ss-local -s 188.123.123.133 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SK1@Proxy0110
+ss-local -s 167.88.63.99 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%213@Proxy0110
 ss-local -s 167.88.63.11 -p 2375 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%217@Proxy0110
-ss-local -s 89.164.99.111 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HR%20%F0%9F%87%AD%F0%9F%87%B7%20Zagreb%204@Proxy0110
-ss-local -s 167.88.63.82 -p 8091 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%218@Proxy0110
-ss-local -s 167.88.63.119 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%212@Proxy0110
+ss-local -s 167.88.63.99 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%221@Proxy0110
+ss-local -s 167.88.63.11 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%216@Proxy0110
+ss-local -s 167.88.63.82 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%219@Proxy0110
+ss-local -s 195.47.194.64 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%201@Proxy0110
+ss-local -s 172.93.153.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Buffalo%201@Proxy0110
 ss-local -s 138.199.42.133 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Chicago%203@Proxy0110
+ss-local -s 198.147.22.197 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%202@Proxy0110
+ss-local -s 213.174.130.130 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US2@Proxy0110
 ss-local -s 167.88.63.99 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%202@Proxy0110
-ss-local -s 212.102.44.71 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%203@Proxy0110
+ss-local -s 109.169.72.239 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-UnitedArabEmirates-Sharjah@Proxy0110
+ss-local -s 212.102.44.81 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%204@Proxy0110
+ss-local -s 212.102.44.91 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%202@Proxy0110
 ss-local -s 209.216.92.215 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Tampa%204@Proxy0110
 ss-local -s 212.102.61.138 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%204@Proxy0110
-ss-local -s 92.38.169.196 -p 826 -l 3993 -m chacha20-ietf-poly1305 -k sF43Xt2gONqcgFX563 # Private%20VPN%20USA%20%F0%9F%87%BA%F0%9F%87%B8%20New%20Jersey@Proxy0110
-ss-local -s 31.133.102.100 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # IS1@Proxy0110
-ss-local -s 198.57.27.218 -p 8090 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%224@Proxy0110
-ss-local -s 109.169.72.239 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-UnitedArabEmirates-Sharjah@Proxy0110
-ss-local -s 185.108.106.175 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%202@Proxy0110
+ss-local -s 198.147.22.85 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%201@Proxy0110
+ss-local -s 167.88.63.82 -p 8091 -l 3993 -m aes-256-gcm -k PCnnH6SQSnfoS27 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%218@Proxy0110
+ss-local -s 195.47.194.96 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%204@Proxy0110
 ss-local -s 212.102.44.87 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%201@Proxy0110
-ss-local -s 212.102.44.91 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%202@Proxy0110
-ss-local -s 185.108.106.174 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Bordeaux%203@Proxy0110
-ss-local -s 103.39.132.187 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Indore@Proxy0110
-ss-local -s 129.227.219.22 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Mumbai@Proxy0110
-ss-local -s 213.174.130.129 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US6@Proxy0110
-ss-local -s 194.233.65.67 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SG1@Proxy0110
-ss-local -s 134.209.155.247 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-India-Bengaluru@Proxy0110
-ss-local -s 213.174.159.247 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # US4@Proxy0110
-ss-local -s 195.158.249.60 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%202@Proxy0110
-ss-local -s 195.158.249.59 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SI%20%F0%9F%87%B8%F0%9F%87%AE%20Ljubljana%204@Proxy0110
-ss-local -s 148.72.174.36 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%201@Proxy0110
-ss-local -s 45.134.140.4 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%203@Proxy0110
-ss-local -s 37.19.211.114 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CA%20%F0%9F%87%A8%F0%9F%87%A6%20Toronto@Proxy0110
-ss-local -s 5.189.202.11 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # KZ%20%F0%9F%87%B0%F0%9F%87%BF%20Oral@Proxy0110
-ss-local -s 104.200.131.245 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%202@Proxy0110
-ss-local -s 212.102.61.136 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%202@Proxy0110
-ss-local -s 154.16.171.213 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%203@Proxy0110
-ss-local -s 192.154.254.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%204@Proxy0110
-ss-local -s 138.199.2.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%202@Proxy0110
-ss-local -s 138.199.9.197 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Los%20Angeles%201@Proxy0110
-ss-local -s 199.10.64.149 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Houston%203@Proxy0110
-ss-local -s 167.88.63.99 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%213@Proxy0110
-ss-local -s 104.200.131.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%204@Proxy0110
-ss-local -s 104.200.131.7 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%201@Proxy0110
-ss-local -s 155.254.29.165 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%202@Proxy0110
+ss-local -s 209.216.92.200 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Tampa%203@Proxy0110
+ss-local -s 66.115.177.146 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Dallas%202@Proxy0110
 ss-local -s 199.10.64.179 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Houston%204@Proxy0110
+ss-local -s 212.102.44.71 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%203@Proxy0110
+ss-local -s 199.10.64.149 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Houston%203@Proxy0110
+ss-local -s 156.146.33.66 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DE%20%F0%9F%87%A9%F0%9F%87%AA%20Berlin%202@Proxy0110
+ss-local -s 148.72.171.178 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%203@Proxy0110
+ss-local -s 148.72.174.51 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%204@Proxy0110
+ss-local -s 31.133.102.100 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # IS1@Proxy0110
+ss-local -s 198.57.27.225 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%225@Proxy0110
+ss-local -s 134.209.155.247 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-India-Bengaluru@Proxy0110
+ss-local -s 212.102.61.136 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%202@Proxy0110
+ss-local -s 194.233.65.67 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SG1@Proxy0110
+ss-local -s 37.1.210.145 -p 37687 -l 3993 -m aes-256-cfb -k NUCCAux # American@Proxy0110
+ss-local -s 212.102.61.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%201@Proxy0110
+ss-local -s 89.187.160.132 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # JP%20%F0%9F%87%AF%F0%9F%87%B5%20Tokyo@Proxy0110
+ss-local -s 104.200.131.245 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%202@Proxy0110
+ss-local -s 89.38.227.173 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%203@Proxy0110
+ss-local -s 202.59.10.102 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # MY1@Proxy0110
+ss-local -s 212.102.46.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Seattle%202@Proxy0110
+ss-local -s 154.16.168.184 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%202@Proxy0110
+ss-local -s 89.187.163.210 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SG%20%F0%9F%87%B8%F0%9F%87%AC%20Singapore@Proxy0110
+ss-local -s 102.165.47.134 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ZA%20%F0%9F%87%BF%F0%9F%87%A6%20Johannesburg@Proxy0110
+ss-local -s 45.43.14.73 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%203@Proxy0110
+ss-local -s 45.43.14.75 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%204@Proxy0110
+ss-local -s 199.58.187.25 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Phoenix%201@Proxy0110
+ss-local -s 198.147.22.167 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%203@Proxy0110
+ss-local -s 103.108.117.118 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Chennai@Proxy0110
+ss-local -s 45.66.134.210 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Japan-Tokyo@Proxy0110
+ss-local -s 89.187.168.44 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AT%20%F0%9F%87%A6%F0%9F%87%B9%20Vienna%201@Proxy0110
+ss-local -s 154.16.168.186 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%201@Proxy0110
+ss-local -s 156.146.54.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20San%20Jose%203@Proxy0110
+ss-local -s 92.38.138.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # RU%20%F0%9F%87%B7%F0%9F%87%BA%20Moscow%203@Proxy0110
+ss-local -s 104.200.131.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%204@Proxy0110
+ss-local -s 138.199.9.197 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Los%20Angeles%201@Proxy0110
+ss-local -s 103.120.66.229 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ID%20%F0%9F%87%AE%F0%9F%87%A9%20Jakarta@Proxy0110
+ss-local -s 104.200.131.7 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Salt%20Lake%20City%201@Proxy0110
+ss-local -s 66.115.147.92 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CA%20%F0%9F%87%A8%F0%9F%87%A6%20Vancouver@Proxy0110
+ss-local -s 213.169.137.221 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # CY2@Proxy0110
+ss-local -s 188.95.55.114 -p 47553 -l 3993 -m aes-256-gcm -k t2JnnFqjDMmzWurseJPgBsYY # 
+ss-local -s 148.72.174.36 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%201@Proxy0110
+ss-local -s 45.134.224.29 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # %20PH%20%F0%9F%87%B5%F0%9F%87%AD%20Manila@Proxy0110
 ss-local -s 156.146.54.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20San%20Jose%202@Proxy0110
 ss-local -s 156.146.54.53 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20San%20Jose%201@Proxy0110
-ss-local -s 202.59.10.102 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # MY1@Proxy0110
-ss-local -s 212.102.46.49 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Seattle%203@Proxy0110
-ss-local -s 89.38.227.173 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%203@Proxy0110
-ss-local -s 212.102.61.148 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Miami%201@Proxy0110
-ss-local -s 155.254.29.163 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Charlotte%201@Proxy0110
-ss-local -s 199.58.187.25 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Phoenix%201@Proxy0110
-ss-local -s 45.66.134.210 -p 809 -l 3993 -m chacha20-ietf-poly1305 -k G!yBwPWH3Vao # Ufo-Japan-Tokyo@Proxy0110
-ss-local -s 37.1.210.145 -p 37687 -l 3993 -m aes-256-cfb -k NUCCAux # American@Proxy0110
-ss-local -s 89.187.163.210 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # SG%20%F0%9F%87%B8%F0%9F%87%AC%20Singapore@Proxy0110
-ss-local -s 213.169.137.221 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # CY2@Proxy0110
-ss-local -s 66.115.177.146 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Dallas%202@Proxy0110
-ss-local -s 198.147.22.85 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%201@Proxy0110
 ss-local -s 156.146.54.57 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20San%20Jose%204@Proxy0110
-ss-local -s 102.165.47.134 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ZA%20%F0%9F%87%BF%F0%9F%87%A6%20Johannesburg@Proxy0110
-ss-local -s 212.102.46.54 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Seattle%202@Proxy0110
-ss-local -s 209.216.92.8 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Tampa%201@Proxy0110
-ss-local -s 198.147.22.197 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%202@Proxy0110
-ss-local -s 212.102.42.89 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HK%20%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong@Proxy0110
-ss-local -s 45.134.224.29 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # %20PH%20%F0%9F%87%B5%F0%9F%87%AD%20Manila@Proxy0110
-ss-local -s 154.16.168.186 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%201@Proxy0110
-ss-local -s 45.43.14.75 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%204@Proxy0110
-ss-local -s 148.72.171.178 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%203@Proxy0110
-ss-local -s 198.147.22.167 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Orlando%203@Proxy0110
-ss-local -s 45.43.14.73 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%203@Proxy0110
-ss-local -s 209.216.92.200 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Tampa%203@Proxy0110
-ss-local -s 148.72.174.51 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20St.%20Louis%204@Proxy0110
-ss-local -s 89.187.160.132 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # JP%20%F0%9F%87%AF%F0%9F%87%B5%20Tokyo@Proxy0110
-ss-local -s 103.120.66.229 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # ID%20%F0%9F%87%AE%F0%9F%87%A9%20Jakarta@Proxy0110
-ss-local -s 194.68.32.29 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # NO2@Proxy0110
-ss-local -s 66.115.147.92 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CA%20%F0%9F%87%A8%F0%9F%87%A6%20Vancouver@Proxy0110
-ss-local -s 209.14.0.228 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BR1@Proxy0110
+ss-local -s 103.39.132.187 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Indore@Proxy0110
 ss-local -s 79.110.54.123 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Las%20Vegas%204@Proxy0110
-ss-local -s 195.47.194.64 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%201@Proxy0110
-ss-local -s 131.255.4.219 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AR1@Proxy0110
-ss-local -s 192.71.227.64 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AT2@Proxy0110
-ss-local -s 185.166.84.79 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # FR%20%F0%9F%87%AB%F0%9F%87%B7%20Marseille%201@Proxy0110
+ss-local -s 212.102.42.89 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # HK%20%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong@Proxy0110
+ss-local -s 194.110.115.84 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BE%20%F0%9F%87%A7%F0%9F%87%AA%20Brussels%202@Proxy0110
+ss-local -s 212.102.46.49 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Seattle%203@Proxy0110
 ss-local -s 91.206.168.70 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AR%20%F0%9F%87%A6%F0%9F%87%B7%20Buenos%20Aires@Proxy0110
-ss-local -s 138.199.42.135 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Chicago%201@Proxy0110
-ss-local -s 154.16.168.184 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Bend%202@Proxy0110
-ss-local -s 66.115.175.50 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%204@Proxy0110
+ss-local -s 209.14.0.228 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # BR1@Proxy0110
 ss-local -s 124.150.139.83 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AU%20%F0%9F%87%A6%F0%9F%87%BA%20Perth@Proxy0110
-ss-local -s 138.199.58.70 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BR%20%F0%9F%87%A7%F0%9F%87%B7%20Sao%20Paulo@Proxy0110
-ss-local -s 103.108.117.118 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # IN%20%F0%9F%87%AE%F0%9F%87%B3%20Chennai@Proxy0110
-ss-local -s 193.218.35.12 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PE%20%F0%9F%87%B5%F0%9F%87%AA%20Lima@Proxy0110
-ss-local -s 176.227.241.35 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CR%20%F0%9F%87%A8%F0%9F%87%B7%20San%20Jose@Proxy0110
+ss-local -s 194.39.127.163 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%203@Proxy0110
+ss-local -s 192.71.227.64 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AT2@Proxy0110
 ss-local -s 194.41.112.16 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # MX%20%F0%9F%87%B2%F0%9F%87%BD%20Mexico%20City@Proxy0110
-ss-local -s 45.248.79.70 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AU%20%F0%9F%87%A6%F0%9F%87%BA%20Adelaide@Proxy0110
+ss-local -s 193.218.35.12 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PE%20%F0%9F%87%B5%F0%9F%87%AA%20Lima@Proxy0110
+ss-local -s 176.10.80.6 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # GB1@Proxy0110
+ss-local -s 138.199.58.70 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # BR%20%F0%9F%87%A7%F0%9F%87%B7%20Sao%20Paulo@Proxy0110
 ss-local -s 45.129.32.32 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CO%20%F0%9F%87%A8%F0%9F%87%B4%20Bogota@Proxy0110
 ss-local -s 27.255.77.197 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # KR%20%F0%9F%87%B0%F0%9F%87%B7%20Seoul@Proxy0110
-ss-local -s 45.149.3.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # VE%20%F0%9F%87%BB%F0%9F%87%AA%20Caracas@Proxy0110
-ss-local -s 38.107.226.146 -p 7306 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%220@Proxy0110
-ss-local -s 180.149.231.117 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # Nz%20%F0%9F%87%B3%F0%9F%87%BF%20Auckland@Proxy0110
-ss-local -s 156.146.54.56 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20San%20Jose%203@Proxy0110
-ss-local -s 45.134.140.17 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%201@Proxy0110
-ss-local -s 185.246.208.108 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PL%20%F0%9F%87%B5%F0%9F%87%B1%20Warsaw%203@Proxy0110
+ss-local -s 195.47.194.97 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%203@Proxy0110
+ss-local -s 45.248.79.70 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AU%20%F0%9F%87%A6%F0%9F%87%BA%20Adelaide@Proxy0110
 ss-local -s 144.48.39.133 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # AU%20%F0%9F%87%A6%F0%9F%87%BA%20Brisbane@Proxy0110
+ss-local -s 45.149.3.5 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # VE%20%F0%9F%87%BB%F0%9F%87%AA%20Caracas@Proxy0110
+ss-local -s 92.38.169.196 -p 826 -l 3993 -m chacha20-ietf-poly1305 -k sF43Xt2gONqcgFX563 # Private%20VPN%20USA%20%F0%9F%87%BA%F0%9F%87%B8%20New%20Jersey@Proxy0110
+ss-local -s 167.88.63.119 -p 7307 -l 3993 -m aes-256-gcm -k FoOiGlkAA9yPEGP # %e4%bb%98%e8%b4%b9%e6%8e%a8%e8%8d%90%3%212@Proxy0110
+ss-local -s 172.93.146.210 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Buffalo%204@Proxy0110
+ss-local -s 176.227.241.35 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CR%20%F0%9F%87%A8%F0%9F%87%B7%20San%20Jose@Proxy0110
+ss-local -s 66.115.175.50 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%204@Proxy0110
+ss-local -s 188.95.55.120 -p 31944 -l 3993 -m aes-256-gcm -k aYNeKDMzYQYw4KbUbJA8Wszq # 
+ss-local -s 180.149.231.117 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # Nz%20%F0%9F%87%B3%F0%9F%87%BF%20Auckland@Proxy0110
+ss-local -s 188.95.55.119 -p 50168 -l 3993 -m aes-256-gcm -k WCuz7yrfZSCQQXSNrtGPz2HT # 
 ss-local -s 37.235.52.112 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # CL1@Proxy0110
-ss-local -s 62.197.144.3 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # DZ%20%F0%9F%87%A9%F0%9F%87%BF%20Algiers%201@Proxy0110
-ss-local -s 46.29.218.6 -p 2376 -l 3993 -m aes-256-gcm -k faBAoD54k87UJG7 # %20ss@Proxy0110
-ss-local -s 185.108.105.127 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # GB%20%F0%9F%87%AC%F0%9F%87%A7%20Glasgow%201@Proxy0110
-ss-local -s 194.39.127.163 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%203@Proxy0110
-ss-local -s 194.39.127.154 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%202@Proxy0110
-ss-local -s 195.47.194.96 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%204@Proxy0110
-ss-local -s 212.102.44.81 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Denver%204@Proxy0110
-ss-local -s 194.39.127.153 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # PT%20%F0%9F%87%B5%F0%9F%87%B9%20Porto%201@Proxy0110
-ss-local -s 188.123.123.133 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SK1@Proxy0110
+ss-local -s 192.71.244.49 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # SL1@Proxy0110
+ss-local -s 45.134.140.17 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Atlanta%201@Proxy0110
+ss-local -s 195.47.194.98 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # CY%20%F0%9F%87%A8%F0%9F%87%BE%20Nicosia%202@Proxy0110
 ss-local -s 172.98.87.37 -p 46354 -l 3993 -m aes-256-gcm -k MYPKdC7n6qjL6xmJBBcrzzqS # US%20%F0%9F%87%BA%F0%9F%87%B8%20Phoenix%203@Proxy0110
+ss-local -s 131.255.4.219 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # AR1@Proxy0110
+ss-local -s 83.217.9.76 -p 989 -l 3993 -m aes-256-cfb -k f8f7aCzcPKbsF8p3 # RU2@Proxy0110
