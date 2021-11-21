@@ -10,7 +10,7 @@ for Android:
         [Trojan](https://play.google.com/store/apps/details?id=com.crosserr.trojan)  
         [Surfboard](https://play.google.com/store/apps/details?id=com.getsurfboard)  
         [Clash](https://play.google.com/store/apps/details?id=com.github.kr328.clash)  
-----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------  
 for IOS:  
         [Outline](https://apps.apple.com/us/app/outline-app/id1356177741)  
         [Potasto Lite](https://apps.apple.com/us/app/potatso-lite/id1239860606)  
@@ -26,15 +26,16 @@ for Windows:
         [QV2RAY](https://github.com/Qv2ray/Qv2ray/releases)  
         [Sstap](https://github.com/githello123/sstap/raw/master/SSTap-beta-setup-1.1.0.1.exe.7z)  
         [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/)  
-----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------  
 for linux:  
         [Outline](https://raw.githubusercontent.com/Jigsaw-Code/outline-releases/master/client/stable/Outline-Client.AppImage) ✓  
         [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/)  
         [Core](https://github.com/v2fly/v2ray-core/releases/)  
         [QV2RAY](https://github.com/Qv2ray/Qv2ray/releases)  
-----------------------------------------------------------------------------------------------------------------------------------         
+----------------------------------------------------------------------------------------------------------------------------------  
 for mac:  
         [Outline](https://itunes.apple.com/us/app/outline-app/id1356178125) ✓  
         [Clash](https://github.com/Fndroid/clash_for_windows_pkg/releases/)  
         [Core](https://github.com/v2fly/v2ray-core/releases/)  
         [QV2RAY](https://github.com/Qv2ray/Qv2ray/releases)  
+----------------------------------------------------------------------------------------------------------------------------------  
