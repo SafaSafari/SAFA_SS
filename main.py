@@ -112,7 +112,7 @@ async def main(n, ss):
         p = await ping(*parse, n)
         if p != None:
             p = (p * 100).__round__()
-            result["{}@Proxy0110".format(ss)] = p
+            result[ss + "%40Proxy0110"] = p
 
 
 async def gather():
