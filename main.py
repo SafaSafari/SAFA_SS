@@ -9,6 +9,7 @@ from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
 import ssl
 import urllib3
+import urllib
 urllib3.disable_warnings()
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -103,7 +104,7 @@ async def parse_ss(ss):
     p2 = part3[0].split(':')
     enc = p2[0]
     password = p2[1]
-    return [ip, port, enc, password, tag]
+    return [ip, port, enc, password, urllib.parse.quote(urllib.parse.unquote(tag))]
 
 async def main(n, ss):
     global result
@@ -113,7 +114,7 @@ async def main(n, ss):
         p = await ping(*parse, n)
         if p != None:
             p = (p * 100).__round__()
-            result[ss + ("#" if '#' not in ss else '') + "%40Proxy0110"] = p
+            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote("@Proxy0110")] = p
 
 
 async def gather():
