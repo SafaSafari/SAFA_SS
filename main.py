@@ -15,6 +15,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 result = {}
 
 async def run(cmd, ret = False):
+    print(cmd)
     proc = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,
