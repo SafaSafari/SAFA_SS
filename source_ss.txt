@@ -154,14 +154,9 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzRjQzWHQyZ09OcWNnRlg1NjM@141.95.0.26:826#Pri
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzRjQzWHQyZ09OcWNnRlg1NjM@81.90.188.167:826#Private VPN Singapore 🇸🇬 Singapore
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzRjQzWHQyZ09OcWNnRlg1NjM@198.244.150.26:826#Private VPN UK 🇬🇧 London
 
-Time VPN:
 
-ss://YWVzLTI1Ni1jZmI6WFM0REJFNg@80.67.3.120:40503#Time VPN  🇸🇪 stockholm
-ss://YWVzLTI1Ni1jZmI6UjNNcTdubg@5.45.69.49:43670#Time Netherlands 🇳🇱 Amsterdam
-ss://YWVzLTI1Ni1jZmI6cnVFdkJTcA@37.1.192.129:55605#Time VPN Germany 🇩🇪 FrankfurtamMain
-ss://YWVzLTI1Ni1jZmI6NWV3cVNMdA@37.1.210.145:13724#Time VPN USA 🇺🇸 Chicago
-ss://YWVzLTI1Ni1jZmI6dkRTOUcycA@185.4.65.6:21247#Time VPN Russia 🇷🇺 Moscow
-ss://YWVzLTI1Ni1nY206Nzc5MDhhMmp4TUMzYWc3dHYwMA@185.126.119.229:8465#PlusVPN
+Time VPN: 40503-46670-55605-21247
+
 
 
 
@@ -278,6 +273,7 @@ Custom:
 
 
 other
+          ss://YWVzLTI1Ni1nY206Nzc5MDhhMmp4TUMzYWc3dHYwMA@185.126.119.229:8465#PlusVPN
           ss://YWVzLTI1Ni1jZmI6aW5zdGdyYW0uY29tL29wZW52cG5zc2g@51.38.112.84:44
           ss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@46.29.218.6:443
           ss://cmM0LW1kNTpwYXNzaW5mbzEyMw@59.125.11.158:8158
