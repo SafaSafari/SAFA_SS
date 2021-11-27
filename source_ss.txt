@@ -227,15 +227,10 @@ Custom:
 
 8080-8090-8091
 23
-                  ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@38.107.226.146:8090
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@172.99.190.35:8090
-                  ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@38.39.192.74:8090
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.61:8090
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@134.195.196.110:8090
-                  ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@145.239.1.137:8090
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@46.29.218.6:8090
-                  ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@198.57.27.238:8090
-                  ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@198.57.27.229:8090
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@172.99.190.7:8091
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.108:8091
                   ss://YWVzLTI1Ni1nY206UENubkg2U1FTbmZvUzI3@167.88.63.89:8091
