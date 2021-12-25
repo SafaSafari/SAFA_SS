@@ -41,13 +41,13 @@ def decode_base64(data, altchars=b'+/'):
         data += b'='* (4 - missing_padding)
     return base64.b64decode(data, altchars)
 
-async def get(proxy, send=False):
+async def get(proxy):
     proxy = 'socks5://{}'.format(proxy)
     connector = ProxyConnector.from_url(proxy)
     try:
         async with ClientSession(connector=connector) as session:
             start = time.perf_counter()
-            async with session.get('http://clients1.google.com/generate_204') as request:
+            async with session.get('http://www.google.com/generate_204') as request:
                 p = time.perf_counter() - start
                 if request.status != 204:
                     p = None
