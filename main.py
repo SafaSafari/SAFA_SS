@@ -16,7 +16,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 result = {}
 
-async def get_ip_loc(ip, n):
+async def get_ip_loc(ip):
     async with ClientSession() as session:
         try:
             async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}, proxy='http://fodev.org:8118') as r:
@@ -124,7 +124,7 @@ async def main(n, ss):
     if parse:
         p = await ping(*parse, n)
         if p != None:
-            loc = await get_ip_loc(parse[0], n)
+            loc = await get_ip_loc(parse[0])
             if loc != None:
                 p = (p * 100).__round__()
                 result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(loc + "@Proxy0110")] = p
