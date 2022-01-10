@@ -114,7 +114,7 @@ async def main(n, ss):
         p = await ping(*parse, n)
         if p != None:
             p = (p * 100).__round__()
-            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(await cmd('geoiplookup {}'.format(parse[0]), true).split(': ')[1] + "@Proxy0110")] = p
+            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(await run('geoiplookup {}'.format(parse[0]), true).split(': ')[1] + "@Proxy0110")] = p
 
 
 async def gather():
