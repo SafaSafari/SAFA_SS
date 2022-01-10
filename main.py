@@ -125,10 +125,11 @@ async def main(n, ss):
     parse = await parse_ss(ss)
     if parse:
         p = await ping(*parse, n)
-        loc = await get_ip_loc(parse[0], n)
-        if p != None and loc != None:
-            p = (p * 100).__round__()
-            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(loc + "@Proxy0110")] = p
+        if p != None:
+            loc = await get_ip_loc(parse[0], n)
+            if loc != None:
+                p = (p * 100).__round__()
+                result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(loc + "@Proxy0110")] = p
 
 
 async def gather():
