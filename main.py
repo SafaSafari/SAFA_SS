@@ -149,6 +149,7 @@ async def gather():
     leaf = []
     for proxy in sort:
         leaf.append("SS=ss,{},{},encrypt-method={},password={}#{}".format(*(await parse_ss(proxy))))
+    text = ''
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
     sslocal = []
