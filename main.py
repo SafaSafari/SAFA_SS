@@ -4,6 +4,7 @@ import time
 import sys
 import json
 import re
+import flag
 from aiohttp import ClientSession
 from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
@@ -14,6 +15,13 @@ urllib3.disable_warnings()
 ssl._create_default_https_context = ssl._create_unverified_context
 
 result = {}
+
+async def get_ip_loc(ip):
+    async with ClientSession() as session:
+        async with session.get('http://ipinfo.io/{}'.format(ip)) as r:
+            result = await r.json()
+    return '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
+
 
 async def run(cmd, ret = False):
     print(cmd)
@@ -114,7 +122,7 @@ async def main(n, ss):
         p = await ping(*parse, n)
         if p != None:
             p = (p * 100).__round__()
-            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote((await run('geoiplookup {}'.format(parse[0]), True)).decode('utf-8').split(': ')[1] + "@Proxy0110")] = p
+            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote((await get_ip_loc(parse[0])) + "@Proxy0110")] = p
 
 
 async def gather():
