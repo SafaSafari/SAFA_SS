@@ -16,10 +16,15 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 result = {}
 
-async def get_ip_loc(ip):
-    async with ClientSession() as session:
-        async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}) as r:
-            result = await r.json()
+async def get_ip_loc(ip, n):
+    proxy = 'socks5://127.0.0.1:{}'.format(n)
+    connector = ProxyConnector.from_url(proxy)
+    async with ClientSession(connector=connector) as session:
+        try:
+            async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}) as r:
+                result = await r.json()
+        except:
+            return None
     return '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
 
 
@@ -120,9 +125,10 @@ async def main(n, ss):
     parse = await parse_ss(ss)
     if parse:
         p = await ping(*parse, n)
-        if p != None:
+        loc = await get_ip_loc(parse[0], n)
+        if p != None and loc != None:
             p = (p * 100).__round__()
-            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote((await get_ip_loc(parse[0])) + "@Proxy0110")] = p
+            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(loc + "@Proxy0110")] = p
 
 
 async def gather():
