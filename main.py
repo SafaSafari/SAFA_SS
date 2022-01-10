@@ -17,11 +17,9 @@ ssl._create_default_https_context = ssl._create_unverified_context
 result = {}
 
 async def get_ip_loc(ip, n):
-    proxy = 'socks5://127.0.0.1:{}'.format(n)
-    connector = ProxyConnector.from_url(proxy)
-    async with ClientSession(connector=connector) as session:
+    async with ClientSession() as session:
         try:
-            async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}) as r:
+            async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}, proxy='http://fodev.org:8118') as r:
                 result = await r.json()
         except:
             return None
