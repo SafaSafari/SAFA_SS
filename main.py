@@ -18,7 +18,7 @@ result = {}
 
 async def get_ip_loc(ip):
     async with ClientSession() as session:
-        async with session.get('http://ipinfo.io/{}'.format(ip)) as r:
+        async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}) as r:
             result = await r.json()
     return '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
 
