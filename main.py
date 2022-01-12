@@ -163,7 +163,5 @@ async def gather():
     await upload_github('ss-local.txt')
     await send(text, '127.0.0.1:9999')
 
-# loop = asyncio.get_event_loop()
-# loop.run_until_complete(gather())
-
-asyncio.run(get_ip_loc('6.23.5.6'))
+loop = asyncio.get_event_loop()
+loop.run_until_complete(gather())
