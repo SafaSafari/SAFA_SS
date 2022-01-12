@@ -16,16 +16,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 result = {}
 
-async def get_ip_loc(ip):
-    async with ClientSession() as session:
-        try:
-            async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}, proxy='http://fodev.org:8118') as r:
-                result = await r.json()
-        except:
-            return None
-    return '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
-
-
 async def run(cmd, ret = False):
     print(cmd)
     proc = await asyncio.create_subprocess_shell(
@@ -52,7 +42,7 @@ def decode_base64(data, altchars=b'+/'):
         data += b'='* (4 - missing_padding)
     return base64.b64decode(data, altchars)
 
-async def get(proxy):
+async def get(proxy, ip):
     proxy = 'socks5://{}'.format(proxy)
     connector = ProxyConnector.from_url(proxy)
     try:
@@ -62,7 +52,10 @@ async def get(proxy):
                 p = time.perf_counter() - start
                 if request.status != 204:
                     p = None
-        return p
+            async with session.get('http://ipinfo.io/{}'.format(ip), headers={'User-Agent': 'curl/7.79.1'}) as r:
+                result = await r.json()
+                location = '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
+        return [p, location]
     except:
         return None
 
@@ -81,7 +74,7 @@ async def send(send, proxy):
 
 async def ping(ip, port, enc, password, tag, n):
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, n, password, enc))
-    p = await get("127.0.0.1:{}".format(n))
+    p = await get("127.0.0.1:{}".format(n), ip)
     return p
 
 
@@ -123,11 +116,9 @@ async def main(n, ss):
     parse = await parse_ss(ss)
     if parse:
         p = await ping(*parse, n)
-        if p != None:
-            loc = await get_ip_loc(parse[0])
-            if loc != None:
-                p = (p * 100).__round__()
-                result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(loc + "@Proxy0110")] = p
+        if p[0] != None:
+            p[0] = (p[0] * 100).__round__()
+            result[ss + ("#" if '#' not in ss else '') + urllib.parse.quote(p[1] + "@Proxy0110")] = p[0]
 
 
 async def gather():
@@ -147,7 +138,6 @@ async def gather():
     leaf = []
     for proxy in sort:
         leaf.append("SS=ss,{},{},encrypt-method={},password={}#{}".format(*(await parse_ss(proxy))))
-    text = ''
     text = text.__add__("\n".join("`{}`\nPing:{}\n".format(
         server, str(ping)) for server, ping in list(sort.items())[:10]))
     sslocal = []
@@ -173,5 +163,7 @@ async def gather():
     await upload_github('ss-local.txt')
     await send(text, '127.0.0.1:9999')
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(gather())
+# loop = asyncio.get_event_loop()
+# loop.run_until_complete(gather())
+
+asyncio.run(get_ip_loc('6.23.5.6'))
