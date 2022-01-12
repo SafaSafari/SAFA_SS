@@ -57,7 +57,7 @@ async def get(proxy, ip):
                 location = '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
         return [p, location]
     except:
-        return None
+        return [None]
 
 
 async def send(send, proxy):
