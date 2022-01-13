@@ -74,6 +74,7 @@ async def send(send, proxy):
 
 async def ping(ip, port, enc, password, tag, n):
     await run('ss-local -s {} -p {} -l {} -k {} -m {}'.format(ip, port, n, password, enc))
+    await asyncio.sleep(2)
     p = await get("127.0.0.1:{}".format(n), ip)
     return p
 
