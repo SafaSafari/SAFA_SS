@@ -1,7 +1,7 @@
 # SAFA_SS
 for Android:  
         [Sagernet](https://play.google.com/store/apps/details?id=io.nekohasekai.sagernet)  
-        [Anxray](https://github.com/XTLS/AnXray/releases/) ✓ 
+        [Anxray](https://github.com/XTLS/AnXray/releases/) ✓   
         [ShadowsockR](https://play.google.com/store/apps/details?id=com.hdev.shadowsocksr)  
         [Outline](https://play.google.com/store/apps/details?id=org.outline.android.client)  
         [v2rayNG](https://play.google.com/store/apps/details?id=com.v2ray.ang)  
