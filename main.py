@@ -131,7 +131,7 @@ async def gather():
     chunk = [source[i:i + n] for i in range(0, len(source), n)]
     for proxies in chunk:
         await asyncio.gather(*[main(n+3333, proxies[n]) for n in range(0, len(proxies) - 1)])
-        await run('killall ss-local')
+        await run('pkill -f "ss-local.*l 33"')
         print(str(source.index(proxies[0])) + '/' + str(len(source)), end="\r")
         await asyncio.sleep(3)
     sort = {k: v for k, v in sorted(
