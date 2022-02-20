@@ -51,14 +51,13 @@ async def ping(ss):
         writer.write(b'GET /generate_204 HTTP/1.1\r\n\r\n')
         data = await reader.read(1024*16)
         if not 'HTTP/1.1 204 No Content' in data.decode('utf-8'):
-            return [False]
+            return [None]
         p = time.perf_counter() - start
         reader, writer = await conn.tcp_connect('ipinfo.io', 80)
         writer.write(b'GET / HTTP/1.1\r\nHost: ipinfo.io\r\n\r\n')
         data = await reader.read(1024*32)
         result = json.loads(data.decode('utf-8').split('\r\n\r\n')[1])
-        location = '{} {} - {} - {} - {}'.format(flag.flag(
-            result['country']), result['country'], result['region'], result['city'], result['org'])
+        location = '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
         return [p, location]
     except:
         return [None]
@@ -107,8 +106,7 @@ async def main(ss):
         if p[0] != None:
             p[0] = (p[0] * 100).__round__()
             result[ss.split('#')[0] + "#" +
-                   urllib.parse.quote(p[1])] = \
-                       p[0]
+                   urllib.parse.quote(p[1])] = p[0]
 
 
 async def gather():
