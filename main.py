@@ -106,8 +106,9 @@ async def main(ss):
         p = await ping(ss)
         if p[0] != None:
             p[0] = (p[0] * 100).__round__()
-            result[ss.split('#')[0] if '#' in ss else ss + "#" +
-                   urllib.parse.quote(p[1] + "@Proxy0110")] = p[0]
+            result[ss.split('#')[0] + "#" +
+                   urllib.parse.quote(p[1])] = \
+                       p[0]
 
 
 async def gather():
