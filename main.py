@@ -51,7 +51,7 @@ async def ping(ss):
         writer.write(b'GET /generate_204 HTTP/1.1\r\n\r\n')
         data = await reader.read(1024*16)
         if not 'HTTP/1.1 204 No Content' in data.decode('utf-8'):
-            return False
+            return [False]
         p = time.perf_counter() - start
         reader, writer = await conn.tcp_connect('ipinfo.io', 80)
         writer.write(b'GET / HTTP/1.1\r\nHost: ipinfo.io\r\n\r\n')
