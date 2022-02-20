@@ -95,7 +95,7 @@ async def parse_ss(ss):
     return [ip, port, enc, password, urllib.parse.quote(urllib.parse.unquote(tag))]
 
 
-async def main(n, ss):
+async def main(ss):
     global result
     ss = ss.strip()
     parse = await parse_ss(ss)
