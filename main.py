@@ -133,7 +133,7 @@ async def gather():
 
     text = "\n".join("`{}`\nPing:{}\n".format(server, str(ping))
                      for server, ping in list(sort.items())[:10])
-
+    text += '\n\n@Proxy0110'
     with open('ss.txt', 'w+') as f:
         f.write("\n".join(sort))
 
