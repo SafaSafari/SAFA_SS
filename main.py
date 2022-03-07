@@ -44,6 +44,8 @@ async def send(send):
 async def ping(ss):
     try:
         ip, port, enc, password, tag = await parse_ss(ss)
+        if ip:
+            return [None]
         start = time.perf_counter()
         conn = pproxy.Connection(
             'ss://{}:{}@{}:{}'.format(enc, password, ip, port))
@@ -78,35 +80,29 @@ async def upload_github(file):
         await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')).decode('utf-8'), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'GET'))['sha']})
 
 
-async def parse_ss(ss):
+def parse_ss(ss):
     if ss[0:5] != "ss://":
-        return
+        return [None]*5
     part1 = ss[5:].split("#")
     tag = part1[1] if len(part1) > 1 else ''
     part1 = part1[0]
     if not part1.__contains__("@"):
-        part2 = decode_base64(part1).decode('utf-8')
+        s = decode_base64(part1).decode('utf-8')
     else:
         p = part1.split("@")
-        part2 = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
-    part3 = part2.split("@")
-    ip, port = part3[1].split(':')
-    p2 = part3[0].split(':')
-    enc = p2[0]
-    password = p2[1]
+        s = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
+    regex = re.match(r"(?i)^(.+?):(.*)@(.+?):(\d+?)$", s)
+    enc, password, ip, port = regex.groups()
     return [ip, port, enc, password, urllib.parse.quote(urllib.parse.unquote(tag))]
-
 
 async def main(ss):
     global result
     ss = ss.strip()
-    parse = await parse_ss(ss)
-    if parse:
-        p = await ping(ss)
-        if p[0] != None:
-            p[0] = (p[0] * 100).__round__()
-            result[ss.split('#')[0] + "#" +
-                   urllib.parse.quote(p[1])] = p[0]
+    p = await ping(ss)
+    if p[0] != None:
+        p[0] = (p[0] * 100).__round__()
+        result[ss.split('#')[0] + "#" +
+                urllib.parse.quote(p[1])] = p[0]
 
 
 async def gather():
