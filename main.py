@@ -44,7 +44,7 @@ async def send(send):
 async def ping(ss):
     try:
         ip, port, enc, password, tag = await parse_ss(ss)
-        if ip:
+        if not ip:
             return [None]
         start = time.perf_counter()
         conn = pproxy.Connection(
