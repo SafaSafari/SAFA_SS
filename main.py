@@ -44,6 +44,7 @@ async def send(send):
 async def ping(ss):
     try:
         ip, port, enc, password, tag = await parse_ss(ss)
+        print(ss, enc)
         if not ip:
             return [None]
         start = time.perf_counter()
@@ -80,7 +81,7 @@ async def upload_github(file):
         await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'PUT', {'message': 'UPDATE', 'content': base64.b64encode(f.read().encode('utf-8')).decode('utf-8'), 'sha': json.loads(await github('repos/SafaSafari/SAFA_SS/contents/{}'.format(file), 'GET'))['sha']})
 
 
-def parse_ss(ss):
+async def parse_ss(ss):
     if ss[0:5] != "ss://":
         return [None]*5
     part1 = ss[5:].split("#")
