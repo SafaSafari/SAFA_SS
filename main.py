@@ -92,7 +92,7 @@ async def parse_ss(ss):
     else:
         p = part1.split("@")
         s = decode_base64(p[0]).decode('utf-8') + "@" + p[1]
-    regex = re.match(r"(?i)^(.+?):(.*)@(.+?):(\d+?)", s)
+    regex = re.match(r"(?i)^(.+?):(.*)@(.+?):(\d+)", s)
     enc, password, ip, port = regex.groups()
     return [ip, port, enc, password, urllib.parse.quote(urllib.parse.unquote(tag))]
 
