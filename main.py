@@ -11,7 +11,7 @@ from aiohttp import ClientSession
 from aiohttp.helpers import BasicAuth
 from aiohttp_socks import ProxyConnector
 
-result = {}
+result = []
 
 
 def decode_base64(data, altchars=b'+/'):
@@ -60,8 +60,9 @@ async def ping(ss):
         writer.write(b'GET / HTTP/1.1\r\nHost: ipinfo.io\r\n\r\n')
         data = await reader.read(1024*32)
         result = json.loads(data.decode('utf-8').split('\r\n\r\n')[1])
-        location = '{} {} - {} - {} - {}'.format(flag.flag(result['country']), result['country'], result['region'], result['city'], result['org'])
-        return [p, location]
+        location = '{} {} - {} - {} - {}'.format(flag.flag(
+            result['country']), result['country'], result['region'], result['city'], result['org'])
+        return [p, ip, port, enc, password, location]
     except:
         return [None]
 
@@ -96,14 +97,14 @@ async def parse_ss(ss):
     enc, password, ip, port = regex.groups()
     return [ip, port, enc, password, urllib.parse.quote(urllib.parse.unquote(tag))]
 
+
 async def main(ss):
     global result
     ss = ss.strip()
-    p = await ping(ss)
-    if p[0] != None:
-        p[0] = (p[0] * 100).__round__()
-        result[ss.split('#')[0] + "#" +
-                urllib.parse.quote(p[1])] = p[0]
+    ping, ip, port, enc, password, location = await ping(ss)
+    if ping != None:
+        ping = (ping * 100).__round__()
+        result.append([ip, port, enc, password, location, ping])
 
 
 async def gather():
@@ -116,23 +117,23 @@ async def gather():
     for proxies in chunk:
         await asyncio.gather(*[main(proxies[n]) for n in range(0, len(proxies) - 1)])
 
-    sort = {k: v for k, v in sorted(
-        result.items(), key=lambda item: item[1])}
+    sort = sorted(result, key=lambda x: x[5])
+    sort = sorted(sort, key=lambda x: not len(x[1]) < 4 or not x[1] in [8080])
 
     leaf = []
     sslocal = []
     for proxy in sort:
-        parse = await parse_ss(proxy)
         leaf.append(
-            "SS=ss,{},{},encrypt-method={},password={}#{}".format(*parse))
+            "SS=ss,{},{},encrypt-method={},password={}#{}".format(*proxy[:-1]))
         sslocal.append(
-            "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*parse))
+            "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*proxy[:-1]))
 
-    text = "\n".join("`{}`\nPing:{}\n".format(server, str(ping))
-                     for server, ping in list(sort.items())[:10])
+    text = "\n".join("`ss://{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location)), str(ping))
+                     for ip, port, enc, password, location, ping in sort[:10])
     text += '\n\n@Proxy0110'
     with open('ss.txt', 'w+') as f:
-        f.write("\n".join(sort))
+        f.write("\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')))
+                          for ip, port, enc, password, location, ping in sort))
 
     with open('leaf.txt', 'w+') as f:
         f.write("\n".join(leaf))
@@ -140,9 +141,9 @@ async def gather():
     with open('ss-local.txt', 'w+') as f:
         f.write("\n".join(sslocal))
 
-    with open("SUBSCRIBE", "w+") as f:
-        f.write(base64.b64encode(b"\n".join(server.encode('utf-8')
-                for server, ping in list(sort.items())[:10])).decode('utf-8'))
+    with open("SUBSCRIBE", "wb+") as f:
+        f.write(base64.b64encode(b"\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')))
+                                            for ip, port, enc, password, location, ping in sort)))
 
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
