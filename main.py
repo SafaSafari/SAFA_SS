@@ -64,7 +64,7 @@ async def ping(ss):
             result['country']), result['country'], result['region'], result['city'], result['org'])
         return [p, ip, port, enc, password, location]
     except:
-        return [None]
+        return [None]*6
 
 
 async def github(api, method, data={}):
