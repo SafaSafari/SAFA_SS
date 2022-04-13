@@ -128,11 +128,11 @@ async def gather():
         sslocal.append(
             "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*proxy[:-1]))
 
-    text = "\n".join("`ss://{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')), str(ping))
+    text = "\n".join("`ss://{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')).decode('utf-8'), str(ping))
                      for ip, port, enc, password, location, ping in sort[:10])
     text += '\n\n@Proxy0110'
     with open('ss.txt', 'w+') as f:
-        f.write("\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')))
+        f.write("\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')).decode('utf-8'))
                           for ip, port, enc, password, location, ping in sort))
 
     with open('leaf.txt', 'w+') as f:
