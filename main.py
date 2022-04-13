@@ -101,10 +101,10 @@ async def parse_ss(ss):
 async def main(ss):
     global result
     ss = ss.strip()
-    ping, ip, port, enc, password, location = await ping(ss)
-    if ping != None:
-        ping = (ping * 100).__round__()
-        result.append([ip, port, enc, password, location, ping])
+    p, ip, port, enc, password, location = await ping(ss)
+    if p != None:
+        p = (p * 100).__round__()
+        result.append([ip, port, enc, password, location, p])
 
 
 async def gather():
