@@ -62,7 +62,7 @@ async def ping(ss):
         result = json.loads(data.decode('utf-8').split('\r\n\r\n')[1])
         location = '{} {} - {} - {} - {}'.format(flag.flag(
             result['country']), result['country'], result['region'], result['city'], result['org'])
-        return [p, ip, port, enc, password, location]
+        return [p, ip, port, enc, password, urllib.parse.quote(location)]
     except:
         return [None]*6
 
@@ -128,11 +128,11 @@ async def gather():
         sslocal.append(
             "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*proxy[:-1]))
 
-    text = "\n".join("`ss://{}#{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8'), location).decode('utf-8'), str(ping))
+    text = "\n".join("`ss://{}#{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8')).decode('utf-8'), location, str(ping))
                      for ip, port, enc, password, location, ping in sort[:10])
     text += '\n\n@Proxy0110'
     with open('ss.txt', 'w+') as f:
-        f.write("\n".join("ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8'), location).decode('utf-8'))
+        f.write("\n".join("ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8')).decode('utf-8'), location)
                           for ip, port, enc, password, location, ping in sort))
 
     with open('leaf.txt', 'w+') as f:
