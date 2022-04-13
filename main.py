@@ -118,7 +118,7 @@ async def gather():
         await asyncio.gather(*[main(proxies[n]) for n in range(0, len(proxies) - 1)])
 
     sort = sorted(result, key=lambda x: x[5])
-    sort = sorted(sort, key=lambda x: 0 if not len(x[1]) < 4 or not x[1] in [8080] else 1)
+    sort = sorted(sort, key=lambda x: not (len(str(x[1])) < 4 or x[1] in [8080]))
 
     leaf = []
     sslocal = []
@@ -142,7 +142,7 @@ async def gather():
         f.write("\n".join(sslocal))
 
     with open("SUBSCRIBE", "wb+") as f:
-        f.write(base64.b64encode("\n".join(["ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8')).decode('utf-8'), location) for ip, port, enc, password, location, ping in sort]).encode('utf-8')))
+        f.write(base64.b64encode("\n".join(["ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8')).decode('utf-8'), location) for ip, port, enc, password, location, ping in sort[10:]]).encode('utf-8')))
 
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
