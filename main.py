@@ -142,8 +142,8 @@ async def gather():
         f.write("\n".join(sslocal))
 
     with open("SUBSCRIBE", "wb+") as f:
-        f.write(base64.b64encode("\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8'))).encode('utf-8')
-                                            for ip, port, enc, password, location, ping in sort)).decode('utf-8'))
+        f.write(base64.b64encode("\n".join(["ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8'))).encode('utf-8')
+                                            for ip, port, enc, password, location, ping in sort])))
 
     await upload_github('SUBSCRIBE')
     await upload_github('ss.txt')
