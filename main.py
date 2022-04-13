@@ -118,7 +118,7 @@ async def gather():
         await asyncio.gather(*[main(proxies[n]) for n in range(0, len(proxies) - 1)])
 
     sort = sorted(result, key=lambda x: x[5])
-    sort = sorted(sort, key=lambda x: not len(x[1]) < 4 or not x[1] in [8080])
+    sort = sorted(sort, key=lambda x: 0 if not len(x[1]) < 4 or not x[1] in [8080] else 1)
 
     leaf = []
     sslocal = []
@@ -128,11 +128,11 @@ async def gather():
         sslocal.append(
             "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*proxy[:-1]))
 
-    text = "\n".join("`ss://{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')).decode('utf-8'), str(ping))
+    text = "\n".join("`ss://{}#{}`\nPing:{}\n".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8'), location).decode('utf-8'), str(ping))
                      for ip, port, enc, password, location, ping in sort[:10])
     text += '\n\n@Proxy0110'
     with open('ss.txt', 'w+') as f:
-        f.write("\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')).decode('utf-8'))
+        f.write("\n".join("ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}'.format(enc, password, ip, port).encode('utf-8'), location).decode('utf-8'))
                           for ip, port, enc, password, location, ping in sort))
 
     with open('leaf.txt', 'w+') as f:
@@ -142,7 +142,7 @@ async def gather():
         f.write("\n".join(sslocal))
 
     with open("SUBSCRIBE", "wb+") as f:
-        f.write(base64.b64encode("\n".join(["ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')).decode('utf-8')).encode('utf-8')
+        f.write(base64.b64encode("\n".join(["ss://{}#{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port).encode('utf-8'), location).decode('utf-8')).encode('utf-8')
                                             for ip, port, enc, password, location, ping in sort])))
 
     await upload_github('SUBSCRIBE')
