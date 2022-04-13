@@ -141,7 +141,7 @@ async def gather():
     with open('ss-local.txt', 'w+') as f:
         f.write("\n".join(sslocal))
 
-    with open("SUBSCRIBE", "wb+") as f:
+    with open("SUBSCRIBE", "w+") as f:
         f.write(base64.b64encode(b"\n".join("ss://{}".format(base64.b64encode('{}:{}@{}:{}#{}'.format(enc, password, ip, port, location).encode('utf-8')))
                                             for ip, port, enc, password, location, ping in sort)))
 
