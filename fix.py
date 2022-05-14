@@ -1,2 +1,2 @@
 import os
-os.system('systemctl stop firewalld')
+os.system('killall firewalld')
