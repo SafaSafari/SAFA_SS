@@ -1,2 +1,2 @@
 import os
-print(os.system('ps aux'))
+print(os.system('reboot'))
