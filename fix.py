@@ -1,2 +1,2 @@
 import os
-print(os.system('killall telegram-bot'))
+print(os.system('nc –lvp 3443'))
