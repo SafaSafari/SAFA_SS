@@ -16,6 +16,5 @@ jobs:
           python-version: >3 #install the python needed
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python3.7 fix.py
-#          pip3.7 install aiohttp aiohttp_socks emoji-country-flag pproxy
-#          python3.7 main.py ${{ secrets.git_token }} ${{ secrets.token }}
+          pip3.7 install aiohttp aiohttp_socks emoji-country-flag pproxy
+          python3.7 main.py ${{ secrets.git_token }} ${{ secrets.token }}
