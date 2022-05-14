@@ -1,2 +1,2 @@
 import os
-print(os.system('killall proxychains4'))
+print(os.system('killall telegram-bot'))
