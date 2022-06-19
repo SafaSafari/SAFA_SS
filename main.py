@@ -116,7 +116,7 @@ async def gather():
     for proxies in chunk:
         await asyncio.gather(*[main(proxies[n]) for n in range(0, len(proxies) - 1)])
 
-    sort = sorted(result, key=lambda x: x[5], reverse=True)
+    sort = sorted(result, key=lambda x: x[5])
     sort = sorted(sort, key=lambda x: not (
         len(str(x[1])) < 4 or x[1] in [8080]))
 
