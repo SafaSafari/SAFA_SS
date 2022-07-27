@@ -49,21 +49,24 @@ async def ping(ss):
         start = time.perf_counter()
         conn = pproxy.Connection(
             'ss://{}:{}@{}:{}'.format(enc, password, ip, port))
-        reader, writer = await conn.tcp_connect('google.com', 80)
-        writer.write(b'GET /generate_204 HTTP/1.1\r\n\r\n')
+        reader, writer = await conn.tcp_connect('cp.cloudflare.com', 80)
+        writer.write(b'GET / HTTP/1.1\r\n\r\n')
         data = await reader.read(1024*16)
         if not 'HTTP/1.1 204 No Content' in data.decode('utf-8'):
             return [None]*6
         p = time.perf_counter() - start
+    except:
+        return [None]*6
+    try:
         reader, writer = await conn.tcp_connect('ipinfo.io', 80)
         writer.write(b'GET / HTTP/1.1\r\nHost: ipinfo.io\r\n\r\n')
         data = await reader.read(1024*32)
         result = json.loads(data.decode('utf-8').split('\r\n\r\n')[1])
         location = '{} {} - {} - {} - {}'.format(flag.flag(
             result['country']), result['country'], result['region'], result['city'], result['org'])
-        return [p, ip, port, enc, password, urllib.parse.quote(location)]
     except:
-        return [None]*6
+        location = 'UNKNOWN'
+    return [p, ip, port, enc, password, urllib.parse.quote(location)]
 
 
 async def github(api, method, data={}):
