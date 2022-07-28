@@ -49,8 +49,8 @@ async def ping(ss):
         start = time.perf_counter()
         conn = pproxy.Connection(
             'ss://{}:{}@{}:{}'.format(enc, password, ip, port))
-        reader, writer = await conn.tcp_connect('cp.cloudflare.com', 80)
-        writer.write(b'GET / HTTP/1.1\r\n\r\n')
+        reader, writer = await conn.tcp_connect('google.com', 80)
+        writer.write(b'GET /generate_204 HTTP/1.1\r\n\r\n')
         data = await reader.read(1024*16)
         if not 'HTTP/1.1 204 No Content' in data.decode('utf-8'):
             return [None]*6
