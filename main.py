@@ -125,9 +125,9 @@ async def gather():
 
     leaf = []
     sslocal = []
-    for proxy in sort:
+    for index, proxy in enumerate(sort):
         leaf.append(
-            "SS=ss,{},{},encrypt-method={},password={}#{}".format(*proxy[:-1]))
+            "SS{}=ss,{},{},encrypt-method={},password={}#{}".format(index, *proxy[:-1]))
         sslocal.append(
             "ss-local -s {} -p {} -l 3993 -m {} -k {} # {}".format(*proxy[:-1]))
 
