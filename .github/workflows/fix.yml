@@ -6,4 +6,6 @@ jobs:
   build:
     runs-on: Iran
     steps:
+    - name: execute py script
       run: wq-quick down wg1
+      
