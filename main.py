@@ -34,9 +34,9 @@ async def send(send):
         sys.argv[2]
     except IndexError:
         return
-    proxy = 'socks5://127.0.0.1:3993'
-    connector = ProxyConnector.from_url(proxy, rdns=True)
-    async with ClientSession(connector=connector) as session:
+#     proxy = 'socks5://127.0.0.1:3993'
+#     connector = ProxyConnector.from_url(proxy, rdns=True)
+    async with ClientSession() as session: # connector=connector
         async with session.post('https://api.telegram.org/bot{}/sendMessage'.format(sys.argv[2]), data={"chat_id": "@Proxy0110", "text": send, "parse_mode": "markdown", "disable_web_page_preview": True}, ssl=False):
             pass  # :)
 
